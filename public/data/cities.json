@@ -1,0 +1,5502 @@
+[
+  {
+    "id": "shanghai-cn",
+    "name": "Shanghai",
+    "country": "CN",
+    "lat": 31.22222,
+    "lng": 121.45806,
+    "population": 24874500,
+    "scores": {
+      "geodesic": 2.9493610061195676e-05
+    }
+  },
+  {
+    "id": "beijing-cn",
+    "name": "Beijing",
+    "country": "CN",
+    "lat": 39.9075,
+    "lng": 116.39723,
+    "population": 18960744,
+    "scores": {
+      "geodesic": 0.04783635819824321
+    }
+  },
+  {
+    "id": "shenzhen-cn",
+    "name": "Shenzhen",
+    "country": "CN",
+    "lat": 22.54554,
+    "lng": 114.0683,
+    "population": 17494398,
+    "scores": {
+      "geodesic": 0.01356928042097633
+    }
+  },
+  {
+    "id": "guangzhou-cn",
+    "name": "Guangzhou",
+    "country": "CN",
+    "lat": 23.11667,
+    "lng": 113.25,
+    "population": 16096724,
+    "scores": {
+      "geodesic": 0.016130043088356267
+    }
+  },
+  {
+    "id": "kinshasa-cd",
+    "name": "Kinshasa",
+    "country": "CD",
+    "lat": -4.32758,
+    "lng": 15.31357,
+    "population": 16000000,
+    "scores": {
+      "geodesic": 0.21194421940053285
+    }
+  },
+  {
+    "id": "istanbul-tr",
+    "name": "Istanbul",
+    "country": "TR",
+    "lat": 41.01384,
+    "lng": 28.94966,
+    "population": 15701602,
+    "scores": {
+      "geodesic": 0.11276870021877962
+    }
+  },
+  {
+    "id": "lagos-ng",
+    "name": "Lagos",
+    "country": "NG",
+    "lat": 6.45407,
+    "lng": 3.39467,
+    "population": 15388000,
+    "scores": {
+      "geodesic": 0.15458586615662587
+    }
+  },
+  {
+    "id": "ho-chi-minh-city-vn",
+    "name": "Ho Chi Minh City",
+    "country": "VN",
+    "lat": 10.82302,
+    "lng": 106.62965,
+    "population": 14002598,
+    "scores": {
+      "geodesic": 0.12582513882355986
+    }
+  },
+  {
+    "id": "chengdu-cn",
+    "name": "Chengdu",
+    "country": "CN",
+    "lat": 30.66667,
+    "lng": 104.06667,
+    "population": 13568357,
+    "scores": {
+      "geodesic": 0.05513304926339339
+    }
+  },
+  {
+    "id": "lahore-pk",
+    "name": "Lahore",
+    "country": "PK",
+    "lat": 31.558,
+    "lng": 74.35071,
+    "population": 13004135,
+    "scores": {
+      "geodesic": 0.0619708129589112
+    }
+  },
+  {
+    "id": "mumbai-in",
+    "name": "Mumbai",
+    "country": "IN",
+    "lat": 19.07283,
+    "lng": 72.88261,
+    "population": 12691836,
+    "scores": {
+      "geodesic": 0.04813989392781721
+    }
+  },
+  {
+    "id": "s\u00e3o-paulo-br",
+    "name": "S\u00e3o Paulo",
+    "country": "BR",
+    "lat": -23.5475,
+    "lng": -46.63611,
+    "population": 12400232,
+    "scores": {
+      "geodesic": 0.3033507943139287
+    }
+  },
+  {
+    "id": "mexico-city-mx",
+    "name": "Mexico City",
+    "country": "MX",
+    "lat": 19.42847,
+    "lng": -99.12766,
+    "population": 12294193,
+    "scores": {
+      "geodesic": 0.19627380650019943
+    }
+  },
+  {
+    "id": "karachi-pk",
+    "name": "Karachi",
+    "country": "PK",
+    "lat": 24.8608,
+    "lng": 67.0104,
+    "population": 11624219,
+    "scores": {
+      "geodesic": 0.11597144197544992
+    }
+  },
+  {
+    "id": "tianjin-cn",
+    "name": "Tianjin",
+    "country": "CN",
+    "lat": 39.14222,
+    "lng": 117.17667,
+    "population": 11090314,
+    "scores": {
+      "geodesic": 0.04192980051429701
+    }
+  },
+  {
+    "id": "delhi-in",
+    "name": "Delhi",
+    "country": "IN",
+    "lat": 28.65195,
+    "lng": 77.23149,
+    "population": 11034555,
+    "scores": {
+      "geodesic": 0.04857432739454133
+    }
+  },
+  {
+    "id": "wuhan-cn",
+    "name": "Wuhan",
+    "country": "CN",
+    "lat": 30.58333,
+    "lng": 114.26667,
+    "population": 10392693,
+    "scores": {
+      "geodesic": 0.04106464337011334
+    }
+  },
+  {
+    "id": "moscow-ru",
+    "name": "Moscow",
+    "country": "RU",
+    "lat": 55.75204,
+    "lng": 37.61781,
+    "population": 10381222,
+    "scores": {
+      "geodesic": 0.18772130437740056
+    }
+  },
+  {
+    "id": "dhaka-bd",
+    "name": "Dhaka",
+    "country": "BD",
+    "lat": 23.7104,
+    "lng": 90.40744,
+    "population": 10356500,
+    "scores": {
+      "geodesic": 0.10080137912406699
+    }
+  },
+  {
+    "id": "seoul-kr",
+    "name": "Seoul",
+    "country": "KR",
+    "lat": 37.566,
+    "lng": 126.9784,
+    "population": 10349312,
+    "scores": {
+      "geodesic": 0.051871210437339
+    }
+  },
+  {
+    "id": "tokyo-jp",
+    "name": "Tokyo",
+    "country": "JP",
+    "lat": 35.6895,
+    "lng": 139.69171,
+    "population": 9733276,
+    "scores": {
+      "geodesic": 0.10141218187745525
+    }
+  },
+  {
+    "id": "dongguan-cn",
+    "name": "Dongguan",
+    "country": "CN",
+    "lat": 23.01797,
+    "lng": 113.74866,
+    "population": 9644871,
+    "scores": {
+      "geodesic": 0.01690212502157444
+    }
+  },
+  {
+    "id": "cairo-eg",
+    "name": "Cairo",
+    "country": "EG",
+    "lat": 30.06263,
+    "lng": 31.24967,
+    "population": 9606916,
+    "scores": {
+      "geodesic": 0.11350871452336544
+    }
+  },
+  {
+    "id": "xi\u2019an-cn",
+    "name": "Xi\u2019an",
+    "country": "CN",
+    "lat": 34.25833,
+    "lng": 108.92861,
+    "population": 9600000,
+    "scores": {
+      "geodesic": 0.0443805794356034
+    }
+  },
+  {
+    "id": "johannesburg-za",
+    "name": "Johannesburg",
+    "country": "ZA",
+    "lat": -26.20227,
+    "lng": 28.04363,
+    "population": 9418183,
+    "scores": {
+      "geodesic": 0.272661732145944
+    }
+  },
+  {
+    "id": "nanjing-cn",
+    "name": "Nanjing",
+    "country": "CN",
+    "lat": 32.06167,
+    "lng": 118.77778,
+    "population": 9314685,
+    "scores": {
+      "geodesic": 0.013573690460885156
+    }
+  },
+  {
+    "id": "hangzhou-cn",
+    "name": "Hangzhou",
+    "country": "CN",
+    "lat": 30.29365,
+    "lng": 120.16142,
+    "population": 9236032,
+    "scores": {
+      "geodesic": 0.00973928471004541
+    }
+  },
+  {
+    "id": "foshan-cn",
+    "name": "Foshan",
+    "country": "CN",
+    "lat": 23.02677,
+    "lng": 113.13148,
+    "population": 9042509,
+    "scores": {
+      "geodesic": 0.016169800672514664
+    }
+  },
+  {
+    "id": "london-gb",
+    "name": "London",
+    "country": "GB",
+    "lat": 51.50853,
+    "lng": -0.12574,
+    "population": 8961989,
+    "scores": {
+      "geodesic": 0.2053882938013462
+    }
+  },
+  {
+    "id": "new-york-city-us",
+    "name": "New York City",
+    "country": "US",
+    "lat": 40.71427,
+    "lng": -74.00597,
+    "population": 8804190,
+    "scores": {
+      "geodesic": 0.2521687514084549
+    }
+  },
+  {
+    "id": "jakarta-id",
+    "name": "Jakarta",
+    "country": "ID",
+    "lat": -6.21462,
+    "lng": 106.84513,
+    "population": 8540121,
+    "scores": {
+      "geodesic": 0.13978842065398314
+    }
+  },
+  {
+    "id": "bengaluru-in",
+    "name": "Bengaluru",
+    "country": "IN",
+    "lat": 12.97194,
+    "lng": 77.59369,
+    "population": 8495492,
+    "scores": {
+      "geodesic": 0.10720957485909537
+    }
+  },
+  {
+    "id": "hanoi-vn",
+    "name": "Hanoi",
+    "country": "VN",
+    "lat": 21.0245,
+    "lng": 105.84117,
+    "population": 8053663,
+    "scores": {
+      "geodesic": 0.07586639055788619
+    }
+  },
+  {
+    "id": "taipei-tw",
+    "name": "Taipei",
+    "country": "TW",
+    "lat": 25.05306,
+    "lng": 121.52639,
+    "population": 7871900,
+    "scores": {
+      "geodesic": 0.044840991208404644
+    }
+  },
+  {
+    "id": "lima-pe",
+    "name": "Lima",
+    "country": "PE",
+    "lat": -12.04318,
+    "lng": -77.02824,
+    "population": 7737002,
+    "scores": {
+      "geodesic": 0.3438000790954045
+    }
+  },
+  {
+    "id": "bogot\u00e1-co",
+    "name": "Bogot\u00e1",
+    "country": "CO",
+    "lat": 4.60971,
+    "lng": -74.08175,
+    "population": 7674366,
+    "scores": {
+      "geodesic": 0.25872794992940384
+    }
+  },
+  {
+    "id": "chongqing-cn",
+    "name": "Chongqing",
+    "country": "CN",
+    "lat": 29.56026,
+    "lng": 106.55771,
+    "population": 7457599,
+    "scores": {
+      "geodesic": 0.04982015031066588
+    }
+  },
+  {
+    "id": "hong-kong-hk",
+    "name": "Hong Kong",
+    "country": "HK",
+    "lat": 22.27832,
+    "lng": 114.17469,
+    "population": 7396076,
+    "scores": {
+      "geodesic": 0.014579260631955328
+    }
+  },
+  {
+    "id": "baghdad-iq",
+    "name": "Baghdad",
+    "country": "IQ",
+    "lat": 33.34058,
+    "lng": 44.40088,
+    "population": 7216000,
+    "scores": {
+      "geodesic": 0.10137703569827998
+    }
+  },
+  {
+    "id": "wuzhong-cn",
+    "name": "Wuzhong",
+    "country": "CN",
+    "lat": 37.9867,
+    "lng": 106.201,
+    "population": 7202654,
+    "scores": {
+      "geodesic": 0.0644932549603941
+    }
+  },
+  {
+    "id": "qingdao-cn",
+    "name": "Qingdao",
+    "country": "CN",
+    "lat": 36.06488,
+    "lng": 120.38042,
+    "population": 7172451,
+    "scores": {
+      "geodesic": 0.03912754925003959
+    }
+  },
+  {
+    "id": "tehran-ir",
+    "name": "Tehran",
+    "country": "IR",
+    "lat": 35.69439,
+    "lng": 51.42151,
+    "population": 7153309,
+    "scores": {
+      "geodesic": 0.12396828356203501
+    }
+  },
+  {
+    "id": "shenyang-cn",
+    "name": "Shenyang",
+    "country": "CN",
+    "lat": 41.79222,
+    "lng": 123.43278,
+    "population": 7050000,
+    "scores": {
+      "geodesic": 0.06571240054055573
+    }
+  },
+  {
+    "id": "hyderabad-in",
+    "name": "Hyderabad",
+    "country": "IN",
+    "lat": 17.38405,
+    "lng": 78.45636,
+    "population": 6993262,
+    "scores": {
+      "geodesic": 0.09193467703378619
+    }
+  },
+  {
+    "id": "rio-de-janeiro-br",
+    "name": "Rio de Janeiro",
+    "country": "BR",
+    "lat": -22.90642,
+    "lng": -43.18223,
+    "population": 6747815,
+    "scores": {
+      "geodesic": 0.32863300224362785
+    }
+  },
+  {
+    "id": "suzhou-cn",
+    "name": "Suzhou",
+    "country": "CN",
+    "lat": 31.30408,
+    "lng": 120.59538,
+    "population": 6715559,
+    "scores": {
+      "geodesic": 0.0024324704012563003
+    }
+  },
+  {
+    "id": "ahmedabad-in",
+    "name": "Ahmedabad",
+    "country": "IN",
+    "lat": 23.02579,
+    "lng": 72.58727,
+    "population": 6357693,
+    "scores": {
+      "geodesic": 0.06529385638637542
+    }
+  },
+  {
+    "id": "abidjan-ci",
+    "name": "Abidjan",
+    "country": "CI",
+    "lat": 5.35444,
+    "lng": -4.00167,
+    "population": 6321017,
+    "scores": {
+      "geodesic": 0.1899070700199096
+    }
+  },
+  {
+    "id": "pudong-cn",
+    "name": "Pudong",
+    "country": "CN",
+    "lat": 31.23995,
+    "lng": 121.50094,
+    "population": 5681512,
+    "scores": {
+      "geodesic": 0.000332098332031951
+    }
+  },
+  {
+    "id": "singapore-sg",
+    "name": "Singapore",
+    "country": "SG",
+    "lat": 1.28967,
+    "lng": 103.85007,
+    "population": 5638700,
+    "scores": {
+      "geodesic": 0.14863752977307973
+    }
+  },
+  {
+    "id": "sydney-au",
+    "name": "Sydney",
+    "country": "AU",
+    "lat": -33.86785,
+    "lng": 151.20732,
+    "population": 5557233,
+    "scores": {
+      "geodesic": 0.6643967560822873
+    }
+  },
+  {
+    "id": "dar-es-salaam-tz",
+    "name": "Dar es Salaam",
+    "country": "TZ",
+    "lat": -6.82349,
+    "lng": 39.26951,
+    "population": 5383728,
+    "scores": {
+      "geodesic": 0.2619381469912472
+    }
+  },
+  {
+    "id": "saint-petersburg-ru",
+    "name": "Saint Petersburg",
+    "country": "RU",
+    "lat": 59.93863,
+    "lng": 30.31413,
+    "population": 5351935,
+    "scores": {
+      "geodesic": 0.2212143523029877
+    }
+  },
+  {
+    "id": "melbourne-au",
+    "name": "Melbourne",
+    "country": "AU",
+    "lat": -37.814,
+    "lng": 144.96332,
+    "population": 5350705,
+    "scores": {
+      "geodesic": 0.6512807258629608
+    }
+  },
+  {
+    "id": "alexandria-eg",
+    "name": "Alexandria",
+    "country": "EG",
+    "lat": 31.20176,
+    "lng": 29.91582,
+    "population": 5263542,
+    "scores": {
+      "geodesic": 0.12456900228352981
+    }
+  },
+  {
+    "id": "harbin-cn",
+    "name": "Harbin",
+    "country": "CN",
+    "lat": 45.75,
+    "lng": 126.65,
+    "population": 5242897,
+    "scores": {
+      "geodesic": 0.11293579806212148
+    }
+  },
+  {
+    "id": "bangkok-th",
+    "name": "Bangkok",
+    "country": "TH",
+    "lat": 13.75398,
+    "lng": 100.50144,
+    "population": 5104476,
+    "scores": {
+      "geodesic": 0.1688044601055631
+    }
+  },
+  {
+    "id": "hefei-cn",
+    "name": "Hefei",
+    "country": "CN",
+    "lat": 31.86389,
+    "lng": 117.28083,
+    "population": 5050000,
+    "scores": {
+      "geodesic": 0.02093786267436173
+    }
+  },
+  {
+    "id": "dalian-cn",
+    "name": "Dalian",
+    "country": "CN",
+    "lat": 38.91222,
+    "lng": 121.60222,
+    "population": 4913879,
+    "scores": {
+      "geodesic": 0.05845897917436312
+    }
+  },
+  {
+    "id": "kano-ng",
+    "name": "Kano",
+    "country": "NG",
+    "lat": 12.00012,
+    "lng": 8.51672,
+    "population": 4910000,
+    "scores": {
+      "geodesic": 0.17832366225559249
+    }
+  },
+  {
+    "id": "santiago-cl",
+    "name": "Santiago",
+    "country": "CL",
+    "lat": -33.45694,
+    "lng": -70.64827,
+    "population": 4837295,
+    "scores": {
+      "geodesic": 0.46218733618395336
+    }
+  },
+  {
+    "id": "cape-town-za",
+    "name": "Cape Town",
+    "country": "ZA",
+    "lat": -33.92584,
+    "lng": 18.42322,
+    "population": 4772846,
+    "scores": {
+      "geodesic": 0.45795761244516775
+    }
+  },
+  {
+    "id": "peshawar-pk",
+    "name": "Peshawar",
+    "country": "PK",
+    "lat": 34.008,
+    "lng": 71.57849,
+    "population": 4758762,
+    "scores": {
+      "geodesic": 0.08929081367274229
+    }
+  },
+  {
+    "id": "changchun-cn",
+    "name": "Changchun",
+    "country": "CN",
+    "lat": 43.88,
+    "lng": 125.32278,
+    "population": 4714996,
+    "scores": {
+      "geodesic": 0.08794251932909809
+    }
+  },
+  {
+    "id": "jeddah-sa",
+    "name": "Jeddah",
+    "country": "SA",
+    "lat": 21.49012,
+    "lng": 39.18624,
+    "population": 4697000,
+    "scores": {
+      "geodesic": 0.17099779367956924
+    }
+  },
+  {
+    "id": "chennai-in",
+    "name": "Chennai",
+    "country": "IN",
+    "lat": 13.08784,
+    "lng": 80.27847,
+    "population": 4681087,
+    "scores": {
+      "geodesic": 0.11410905157043905
+    }
+  },
+  {
+    "id": "kolkata-in",
+    "name": "Kolkata",
+    "country": "IN",
+    "lat": 22.56263,
+    "lng": 88.36304,
+    "population": 4631392,
+    "scores": {
+      "geodesic": 0.09656517825077436
+    }
+  },
+  {
+    "id": "xiamen-cn",
+    "name": "Xiamen",
+    "country": "CN",
+    "lat": 24.47979,
+    "lng": 118.08187,
+    "population": 4617251,
+    "scores": {
+      "geodesic": 0.03343836766021115
+    }
+  },
+  {
+    "id": "surat-in",
+    "name": "Surat",
+    "country": "IN",
+    "lat": 21.19594,
+    "lng": 72.83023,
+    "population": 4591246,
+    "scores": {
+      "geodesic": 0.059061807941943816
+    }
+  },
+  {
+    "id": "yangon-mm",
+    "name": "Yangon",
+    "country": "MM",
+    "lat": 16.80528,
+    "lng": 96.15611,
+    "population": 4477638,
+    "scores": {
+      "geodesic": 0.17920225925591166
+    }
+  },
+  {
+    "id": "bao'an-cn",
+    "name": "Bao'an",
+    "country": "CN",
+    "lat": 22.55213,
+    "lng": 113.88288,
+    "population": 4476554,
+    "scores": {
+      "geodesic": 0.014304383914489256
+    }
+  },
+  {
+    "id": "kabul-af",
+    "name": "Kabul",
+    "country": "AF",
+    "lat": 34.52813,
+    "lng": 69.17233,
+    "population": 4434550,
+    "scores": {
+      "geodesic": 0.11137758934355997
+    }
+  },
+  {
+    "id": "nairobi-ke",
+    "name": "Nairobi",
+    "country": "KE",
+    "lat": -1.28333,
+    "lng": 36.81667,
+    "population": 4397073,
+    "scores": {
+      "geodesic": 0.22737932359962285
+    }
+  },
+  {
+    "id": "wuxi-cn",
+    "name": "Wuxi",
+    "country": "CN",
+    "lat": 31.56887,
+    "lng": 120.28857,
+    "population": 4396835,
+    "scores": {
+      "geodesic": 0.0028446340201161574
+    }
+  },
+  {
+    "id": "giza-eg",
+    "name": "Giza",
+    "country": "EG",
+    "lat": 30.00944,
+    "lng": 31.20861,
+    "population": 4367343,
+    "scores": {
+      "geodesic": 0.11427739458228706
+    }
+  },
+  {
+    "id": "jinan-cn",
+    "name": "Jinan",
+    "country": "CN",
+    "lat": 36.66833,
+    "lng": 116.99722,
+    "population": 4335989,
+    "scores": {
+      "geodesic": 0.024526580007090452
+    }
+  },
+  {
+    "id": "taiyuan-cn",
+    "name": "Taiyuan",
+    "country": "CN",
+    "lat": 37.86944,
+    "lng": 112.56028,
+    "population": 4303673,
+    "scores": {
+      "geodesic": 0.03412659454413582
+    }
+  },
+  {
+    "id": "zhengzhou-cn",
+    "name": "Zhengzhou",
+    "country": "CN",
+    "lat": 34.75778,
+    "lng": 113.64861,
+    "population": 4253913,
+    "scores": {
+      "geodesic": 0.02344826400580479
+    }
+  },
+  {
+    "id": "bamako-ml",
+    "name": "Bamako",
+    "country": "ML",
+    "lat": 12.60915,
+    "lng": -7.97522,
+    "population": 4227569,
+    "scores": {
+      "geodesic": 0.2466620838411769
+    }
+  },
+  {
+    "id": "riyadh-sa",
+    "name": "Riyadh",
+    "country": "SA",
+    "lat": 24.68773,
+    "lng": 46.72185,
+    "population": 4205961,
+    "scores": {
+      "geodesic": 0.16590990146106865
+    }
+  },
+  {
+    "id": "new-taipei-city-tw",
+    "name": "New Taipei City",
+    "country": "TW",
+    "lat": 25.06199,
+    "lng": 121.45703,
+    "population": 4004367,
+    "scores": {
+      "geodesic": 0.044215991504832804
+    }
+  },
+  {
+    "id": "new-territories-hk",
+    "name": "New Territories",
+    "country": "HK",
+    "lat": 22.42441,
+    "lng": 114.11095,
+    "population": 3984077,
+    "scores": {
+      "geodesic": 0.01411071430127301
+    }
+  },
+  {
+    "id": "shijiazhuang-cn",
+    "name": "Shijiazhuang",
+    "country": "CN",
+    "lat": 38.04139,
+    "lng": 114.47861,
+    "population": 3938513,
+    "scores": {
+      "geodesic": 0.03544895044798064
+    }
+  },
+  {
+    "id": "chattogram-bd",
+    "name": "Chattogram",
+    "country": "BD",
+    "lat": 22.3384,
+    "lng": 91.83168,
+    "population": 3920222,
+    "scores": {
+      "geodesic": 0.11925671648103836
+    }
+  },
+  {
+    "id": "addis-ababa-et",
+    "name": "Addis Ababa",
+    "country": "ET",
+    "lat": 9.02497,
+    "lng": 38.74689,
+    "population": 3860000,
+    "scores": {
+      "geodesic": 0.2781542557217564
+    }
+  },
+  {
+    "id": "kunming-cn",
+    "name": "Kunming",
+    "country": "CN",
+    "lat": 25.03889,
+    "lng": 102.71833,
+    "population": 3855346,
+    "scores": {
+      "geodesic": 0.08426932190533772
+    }
+  },
+  {
+    "id": "zhongshan-cn",
+    "name": "Zhongshan",
+    "country": "CN",
+    "lat": 22.52306,
+    "lng": 113.37912,
+    "population": 3841873,
+    "scores": {
+      "geodesic": 0.016223414981475913
+    }
+  },
+  {
+    "id": "nanning-cn",
+    "name": "Nanning",
+    "country": "CN",
+    "lat": 22.81667,
+    "lng": 108.31667,
+    "population": 3839800,
+    "scores": {
+      "geodesic": 0.04820911859060614
+    }
+  },
+  {
+    "id": "shantou-cn",
+    "name": "Shantou",
+    "country": "CN",
+    "lat": 23.35489,
+    "lng": 116.67876,
+    "population": 3838900,
+    "scores": {
+      "geodesic": 0.03094222764844459
+    }
+  },
+  {
+    "id": "los-angeles-us",
+    "name": "Los Angeles",
+    "country": "US",
+    "lat": 34.05223,
+    "lng": -118.24368,
+    "population": 3820914,
+    "scores": {
+      "geodesic": 0.36441711953554595
+    }
+  },
+  {
+    "id": "faisalabad-pk",
+    "name": "Faisalabad",
+    "country": "PK",
+    "lat": 31.41554,
+    "lng": 73.08969,
+    "population": 3800193,
+    "scores": {
+      "geodesic": 0.06843705110631786
+    }
+  },
+  {
+    "id": "dubai-ae",
+    "name": "Dubai",
+    "country": "AE",
+    "lat": 25.07725,
+    "lng": 55.30927,
+    "population": 3790000,
+    "scores": {
+      "geodesic": 0.1500829025331159
+    }
+  },
+  {
+    "id": "yokohama-jp",
+    "name": "Yokohama",
+    "country": "JP",
+    "lat": 35.43333,
+    "lng": 139.65,
+    "population": 3777491,
+    "scores": {
+      "geodesic": 0.10157995387997128
+    }
+  },
+  {
+    "id": "fuzhou-cn",
+    "name": "Fuzhou",
+    "country": "CN",
+    "lat": 26.06139,
+    "lng": 119.30611,
+    "population": 3740000,
+    "scores": {
+      "geodesic": 0.03679259672258119
+    }
+  },
+  {
+    "id": "ningbo-cn",
+    "name": "Ningbo",
+    "country": "CN",
+    "lat": 29.87819,
+    "lng": 121.54945,
+    "population": 3731203,
+    "scores": {
+      "geodesic": 0.014004801179617271
+    }
+  },
+  {
+    "id": "casablanca-ma",
+    "name": "Casablanca",
+    "country": "MA",
+    "lat": 33.58831,
+    "lng": -7.61138,
+    "population": 3665954,
+    "scores": {
+      "geodesic": 0.2652759061853692
+    }
+  },
+  {
+    "id": "ibadan-ng",
+    "name": "Ibadan",
+    "country": "NG",
+    "lat": 7.37756,
+    "lng": 3.90591,
+    "population": 3649000,
+    "scores": {
+      "geodesic": 0.15311035694386835
+    }
+  },
+  {
+    "id": "puyang-cn",
+    "name": "Puyang",
+    "country": "CN",
+    "lat": 29.45679,
+    "lng": 119.88872,
+    "population": 3590000,
+    "scores": {
+      "geodesic": 0.013418791390917773
+    }
+  },
+  {
+    "id": "ankara-tr",
+    "name": "Ankara",
+    "country": "TR",
+    "lat": 39.91987,
+    "lng": 32.85427,
+    "population": 3517182,
+    "scores": {
+      "geodesic": 0.10595083819380853
+    }
+  },
+  {
+    "id": "shiyan-cn",
+    "name": "Shiyan",
+    "country": "CN",
+    "lat": 32.6475,
+    "lng": 110.77806,
+    "population": 3460000,
+    "scores": {
+      "geodesic": 0.04315835213050838
+    }
+  },
+  {
+    "id": "berlin-de",
+    "name": "Berlin",
+    "country": "DE",
+    "lat": 52.52437,
+    "lng": 13.41053,
+    "population": 3426354,
+    "scores": {
+      "geodesic": 0.1515529675709963
+    }
+  },
+  {
+    "id": "tangshan-cn",
+    "name": "Tangshan",
+    "country": "CN",
+    "lat": 39.64381,
+    "lng": 118.18319,
+    "population": 3372102,
+    "scores": {
+      "geodesic": 0.049549444475982585
+    }
+  },
+  {
+    "id": "rawalpindi-pk",
+    "name": "Rawalpindi",
+    "country": "PK",
+    "lat": 33.59733,
+    "lng": 73.0479,
+    "population": 3357612,
+    "scores": {
+      "geodesic": 0.08182852104329948
+    }
+  },
+  {
+    "id": "l\u00fcliang-cn",
+    "name": "L\u00fcliang",
+    "country": "CN",
+    "lat": 37.5192,
+    "lng": 111.14436,
+    "population": 3346500,
+    "scores": {
+      "geodesic": 0.0439832831617479
+    }
+  },
+  {
+    "id": "durban-za",
+    "name": "Durban",
+    "country": "ZA",
+    "lat": -29.8579,
+    "lng": 31.0292,
+    "population": 3338026,
+    "scores": {
+      "geodesic": 0.3375146357924103
+    }
+  },
+  {
+    "id": "changzhou-cn",
+    "name": "Changzhou",
+    "country": "CN",
+    "lat": 31.77359,
+    "lng": 119.95401,
+    "population": 3290918,
+    "scores": {
+      "geodesic": 0.004235555360874804
+    }
+  },
+  {
+    "id": "busan-kr",
+    "name": "Busan",
+    "country": "KR",
+    "lat": 35.10168,
+    "lng": 129.03004,
+    "population": 3285147,
+    "scores": {
+      "geodesic": 0.05838779870561176
+    }
+  },
+  {
+    "id": "madrid-es",
+    "name": "Madrid",
+    "country": "ES",
+    "lat": 40.4165,
+    "lng": -3.70256,
+    "population": 3255944,
+    "scores": {
+      "geodesic": 0.24990172875844702
+    }
+  },
+  {
+    "id": "pyongyang-kp",
+    "name": "Pyongyang",
+    "country": "KP",
+    "lat": 39.03385,
+    "lng": 125.75432,
+    "population": 3222000,
+    "scores": {
+      "geodesic": 0.06598929308374092
+    }
+  },
+  {
+    "id": "zibo-cn",
+    "name": "Zibo",
+    "country": "CN",
+    "lat": 36.79056,
+    "lng": 118.06333,
+    "population": 3129228,
+    "scores": {
+      "geodesic": 0.029157168374563138
+    }
+  },
+  {
+    "id": "pune-in",
+    "name": "Pune",
+    "country": "IN",
+    "lat": 18.51957,
+    "lng": 73.85535,
+    "population": 3124458,
+    "scores": {
+      "geodesic": 0.05039897512726704
+    }
+  },
+  {
+    "id": "bursa-tr",
+    "name": "Bursa",
+    "country": "TR",
+    "lat": 40.19559,
+    "lng": 29.06013,
+    "population": 3101833,
+    "scores": {
+      "geodesic": 0.10905532569660228
+    }
+  },
+  {
+    "id": "changsha-cn",
+    "name": "Changsha",
+    "country": "CN",
+    "lat": 28.19874,
+    "lng": 112.97087,
+    "population": 3093980,
+    "scores": {
+      "geodesic": 0.03843665204755887
+    }
+  },
+  {
+    "id": "quezon-city-ph",
+    "name": "Quezon City",
+    "country": "PH",
+    "lat": 14.6488,
+    "lng": 121.0509,
+    "population": 3084270,
+    "scores": {
+      "geodesic": 0.11182002014122269
+    }
+  },
+  {
+    "id": "jaipur-in",
+    "name": "Jaipur",
+    "country": "IN",
+    "lat": 26.91962,
+    "lng": 75.78781,
+    "population": 3046163,
+    "scores": {
+      "geodesic": 0.06543926340925928
+    }
+  },
+  {
+    "id": "guiyang-cn",
+    "name": "Guiyang",
+    "country": "CN",
+    "lat": 26.58333,
+    "lng": 106.71667,
+    "population": 3037159,
+    "scores": {
+      "geodesic": 0.05476063997504056
+    }
+  },
+  {
+    "id": "\u00fcr\u00fcmqi-cn",
+    "name": "\u00dcr\u00fcmqi",
+    "country": "CN",
+    "lat": 43.80096,
+    "lng": 87.60046,
+    "population": 3029372,
+    "scores": {
+      "geodesic": 0.2702850972579832
+    }
+  },
+  {
+    "id": "incheon-kr",
+    "name": "Incheon",
+    "country": "KR",
+    "lat": 37.45646,
+    "lng": 126.70515,
+    "population": 3015482,
+    "scores": {
+      "geodesic": 0.05082693880298354
+    }
+  },
+  {
+    "id": "lanzhou-cn",
+    "name": "Lanzhou",
+    "country": "CN",
+    "lat": 36.05701,
+    "lng": 103.83987,
+    "population": 3000000,
+    "scores": {
+      "geodesic": 0.07698546041851269
+    }
+  },
+  {
+    "id": "caracas-ve",
+    "name": "Caracas",
+    "country": "VE",
+    "lat": 10.48801,
+    "lng": -66.87919,
+    "population": 3000000,
+    "scores": {
+      "geodesic": 0.2636279988316427
+    }
+  },
+  {
+    "id": "kyiv-ua",
+    "name": "Kyiv",
+    "country": "UA",
+    "lat": 50.45466,
+    "lng": 30.5238,
+    "population": 2952301,
+    "scores": {
+      "geodesic": 0.1603546396150941
+    }
+  },
+  {
+    "id": "i\u0307zmir-tr",
+    "name": "\u0130zmir",
+    "country": "TR",
+    "lat": 38.41273,
+    "lng": 27.13838,
+    "population": 2938292,
+    "scores": {
+      "geodesic": 0.12592331953930605
+    }
+  },
+  {
+    "id": "huizhou-cn",
+    "name": "Huizhou",
+    "country": "CN",
+    "lat": 23.11147,
+    "lng": 114.41523,
+    "population": 2900113,
+    "scores": {
+      "geodesic": 0.019836592378364375
+    }
+  },
+  {
+    "id": "buenos-aires-ar",
+    "name": "Buenos Aires",
+    "country": "AR",
+    "lat": -34.61315,
+    "lng": -58.37723,
+    "population": 2891082,
+    "scores": {
+      "geodesic": 0.39890824873041064
+    }
+  },
+  {
+    "id": "surabaya-id",
+    "name": "Surabaya",
+    "country": "ID",
+    "lat": -7.24917,
+    "lng": 112.75083,
+    "population": 2874314,
+    "scores": {
+      "geodesic": 0.19469276636344154
+    }
+  },
+  {
+    "id": "haikou-cn",
+    "name": "Haikou",
+    "country": "CN",
+    "lat": 20.03421,
+    "lng": 110.34651,
+    "population": 2873358,
+    "scores": {
+      "geodesic": 0.05561471284879406
+    }
+  },
+  {
+    "id": "taichung-tw",
+    "name": "Taichung",
+    "country": "TW",
+    "lat": 24.1469,
+    "lng": 120.6839,
+    "population": 2850285,
+    "scores": {
+      "geodesic": 0.04764908768469495
+    }
+  },
+  {
+    "id": "kanpur-in",
+    "name": "Kanpur",
+    "country": "IN",
+    "lat": 26.46523,
+    "lng": 80.34975,
+    "population": 2823249,
+    "scores": {
+      "geodesic": 0.06858941088297335
+    }
+  },
+  {
+    "id": "toronto-ca",
+    "name": "Toronto",
+    "country": "CA",
+    "lat": 43.70643,
+    "lng": -79.39864,
+    "population": 2794356,
+    "scores": {
+      "geodesic": 0.3021553735852134
+    }
+  },
+  {
+    "id": "quito-ec",
+    "name": "Quito",
+    "country": "EC",
+    "lat": -0.22985,
+    "lng": -78.52495,
+    "population": 2781641,
+    "scores": {
+      "geodesic": 0.2902951121399757
+    }
+  },
+  {
+    "id": "brisbane-au",
+    "name": "Brisbane",
+    "country": "AU",
+    "lat": -27.46794,
+    "lng": 153.02809,
+    "population": 2780063,
+    "scores": {
+      "geodesic": 0.6646550411462022
+    }
+  },
+  {
+    "id": "luanda-ao",
+    "name": "Luanda",
+    "country": "AO",
+    "lat": -8.83682,
+    "lng": 13.23432,
+    "population": 2776168,
+    "scores": {
+      "geodesic": 0.26750713236636875
+    }
+  },
+  {
+    "id": "osaka-jp",
+    "name": "Osaka",
+    "country": "JP",
+    "lat": 34.69379,
+    "lng": 135.50107,
+    "population": 2753862,
+    "scores": {
+      "geodesic": 0.08134524241316893
+    }
+  },
+  {
+    "id": "linyi-cn",
+    "name": "Linyi",
+    "country": "CN",
+    "lat": 35.06306,
+    "lng": 118.34278,
+    "population": 2743843,
+    "scores": {
+      "geodesic": 0.02387302659829972
+    }
+  },
+  {
+    "id": "baoding-cn",
+    "name": "Baoding",
+    "country": "CN",
+    "lat": 38.87288,
+    "lng": 115.46246,
+    "population": 2739887,
+    "scores": {
+      "geodesic": 0.039947282269023734
+    }
+  },
+  {
+    "id": "kaohsiung-tw",
+    "name": "Kaohsiung",
+    "country": "TW",
+    "lat": 22.61626,
+    "lng": 120.31333,
+    "population": 2737660,
+    "scores": {
+      "geodesic": 0.05451168185400442
+    }
+  },
+  {
+    "id": "brooklyn-us",
+    "name": "Brooklyn",
+    "country": "US",
+    "lat": 40.6501,
+    "lng": -73.94958,
+    "population": 2736074,
+    "scores": {
+      "geodesic": 0.25222904035618027
+    }
+  },
+  {
+    "id": "guayaquil-ec",
+    "name": "Guayaquil",
+    "country": "EC",
+    "lat": -2.19616,
+    "lng": -79.88621,
+    "population": 2723665,
+    "scores": {
+      "geodesic": 0.3107788082658435
+    }
+  },
+  {
+    "id": "belo-horizonte-br",
+    "name": "Belo Horizonte",
+    "country": "BR",
+    "lat": -19.92083,
+    "lng": -43.93778,
+    "population": 2721564,
+    "scores": {
+      "geodesic": 0.31876377937739436
+    }
+  },
+  {
+    "id": "minhang-cn",
+    "name": "Minhang",
+    "country": "CN",
+    "lat": 31.10881,
+    "lng": 121.37471,
+    "population": 2716600,
+    "scores": {
+      "geodesic": 0.0005685104322269047
+    }
+  },
+  {
+    "id": "salvador-br",
+    "name": "Salvador",
+    "country": "BR",
+    "lat": -12.97563,
+    "lng": -38.49096,
+    "population": 2711840,
+    "scores": {
+      "geodesic": 0.37036471247844405
+    }
+  },
+  {
+    "id": "abuja-ng",
+    "name": "Abuja",
+    "country": "NG",
+    "lat": 9.05785,
+    "lng": 7.49508,
+    "population": 2690000,
+    "scores": {
+      "geodesic": 0.1583282094621968
+    }
+  },
+  {
+    "id": "gazipur-bd",
+    "name": "Gazipur",
+    "country": "BD",
+    "lat": 23.99844,
+    "lng": 90.42234,
+    "population": 2674697,
+    "scores": {
+      "geodesic": 0.10185431489969556
+    }
+  },
+  {
+    "id": "chicago-us",
+    "name": "Chicago",
+    "country": "US",
+    "lat": 41.85003,
+    "lng": -87.65005,
+    "population": 2664452,
+    "scores": {
+      "geodesic": 0.3273248195805078
+    }
+  },
+  {
+    "id": "wenzhou-cn",
+    "name": "Wenzhou",
+    "country": "CN",
+    "lat": 27.99942,
+    "lng": 120.66682,
+    "population": 2650000,
+    "scores": {
+      "geodesic": 0.030499246260536766
+    }
+  },
+  {
+    "id": "dakar-sn",
+    "name": "Dakar",
+    "country": "SN",
+    "lat": 14.6937,
+    "lng": -17.44406,
+    "population": 2646503,
+    "scores": {
+      "geodesic": 0.2824035423639399
+    }
+  },
+  {
+    "id": "haiphong-vn",
+    "name": "Haiphong",
+    "country": "VN",
+    "lat": 20.86481,
+    "lng": 106.68345,
+    "population": 2625200,
+    "scores": {
+      "geodesic": 0.0682975538643308
+    }
+  },
+  {
+    "id": "yunfu-cn",
+    "name": "Yunfu",
+    "country": "CN",
+    "lat": 22.92787,
+    "lng": 112.03809,
+    "population": 2612800,
+    "scores": {
+      "geodesic": 0.02456982979493044
+    }
+  },
+  {
+    "id": "navi-mumbai-in",
+    "name": "Navi Mumbai",
+    "country": "IN",
+    "lat": 19.03681,
+    "lng": 73.01582,
+    "population": 2600000,
+    "scores": {
+      "geodesic": 0.047560118072501156
+    }
+  },
+  {
+    "id": "mogadishu-so",
+    "name": "Mogadishu",
+    "country": "SO",
+    "lat": 2.03711,
+    "lng": 45.34375,
+    "population": 2587183,
+    "scores": {
+      "geodesic": 0.32191183411923785
+    }
+  },
+  {
+    "id": "bekasi-id",
+    "name": "Bekasi",
+    "country": "ID",
+    "lat": -6.2349,
+    "lng": 106.9896,
+    "population": 2564940,
+    "scores": {
+      "geodesic": 0.14022723623217168
+    }
+  },
+  {
+    "id": "kumasi-gh",
+    "name": "Kumasi",
+    "country": "GH",
+    "lat": 6.68848,
+    "lng": -1.62443,
+    "population": 2544530,
+    "scores": {
+      "geodesic": 0.17815674426660216
+    }
+  },
+  {
+    "id": "gujranwala-pk",
+    "name": "Gujranwala",
+    "country": "PK",
+    "lat": 32.15567,
+    "lng": 74.18705,
+    "population": 2511118,
+    "scores": {
+      "geodesic": 0.0660218932422597
+    }
+  },
+  {
+    "id": "huai'an-cn",
+    "name": "Huai'an",
+    "country": "CN",
+    "lat": 33.58861,
+    "lng": 119.01917,
+    "population": 2494013,
+    "scores": {
+      "geodesic": 0.018202631718385053
+    }
+  },
+  {
+    "id": "lucknow-in",
+    "name": "Lucknow",
+    "country": "IN",
+    "lat": 26.83928,
+    "lng": 80.92313,
+    "population": 2472011,
+    "scores": {
+      "geodesic": 0.07176442209525355
+    }
+  },
+  {
+    "id": "bandung-id",
+    "name": "Bandung",
+    "country": "ID",
+    "lat": -6.92222,
+    "lng": 107.60694,
+    "population": 2444160,
+    "scores": {
+      "geodesic": 0.15207605295160256
+    }
+  },
+  {
+    "id": "medan-id",
+    "name": "Medan",
+    "country": "ID",
+    "lat": 3.58333,
+    "lng": 98.66667,
+    "population": 2435252,
+    "scores": {
+      "geodesic": 0.19321813370112775
+    }
+  },
+  {
+    "id": "ouagadougou-bf",
+    "name": "Ouagadougou",
+    "country": "BF",
+    "lat": 12.36566,
+    "lng": -1.53388,
+    "population": 2415266,
+    "scores": {
+      "geodesic": 0.2073823379004443
+    }
+  },
+  {
+    "id": "nagpur-in",
+    "name": "Nagpur",
+    "country": "IN",
+    "lat": 21.14631,
+    "lng": 79.08491,
+    "population": 2405665,
+    "scores": {
+      "geodesic": 0.08078408833238103
+    }
+  },
+  {
+    "id": "fortaleza-br",
+    "name": "Fortaleza",
+    "country": "BR",
+    "lat": -3.71722,
+    "lng": -38.54306,
+    "population": 2400000,
+    "scores": {
+      "geodesic": 0.3981937430078672
+    }
+  },
+  {
+    "id": "cali-co",
+    "name": "Cali",
+    "country": "CO",
+    "lat": 3.43054,
+    "lng": -76.5199,
+    "population": 2392877,
+    "scores": {
+      "geodesic": 0.2654387312704299
+    }
+  },
+  {
+    "id": "daegu-kr",
+    "name": "Daegu",
+    "country": "KR",
+    "lat": 35.87028,
+    "lng": 128.59111,
+    "population": 2365523,
+    "scores": {
+      "geodesic": 0.056228689834673024
+    }
+  },
+  {
+    "id": "algiers-dz",
+    "name": "Algiers",
+    "country": "DZ",
+    "lat": 36.73225,
+    "lng": 3.08746,
+    "population": 2364230,
+    "scores": {
+      "geodesic": 0.23897332411646036
+    }
+  },
+  {
+    "id": "nanchang-cn",
+    "name": "Nanchang",
+    "country": "CN",
+    "lat": 28.68396,
+    "lng": 115.85306,
+    "population": 2357839,
+    "scores": {
+      "geodesic": 0.03794571523740106
+    }
+  },
+  {
+    "id": "baku-az",
+    "name": "Baku",
+    "country": "AZ",
+    "lat": 40.37767,
+    "lng": 49.89201,
+    "population": 2351300,
+    "scores": {
+      "geodesic": 0.15065886456023383
+    }
+  },
+  {
+    "id": "hohhot-cn",
+    "name": "Hohhot",
+    "country": "CN",
+    "lat": 40.81056,
+    "lng": 111.65222,
+    "population": 2350000,
+    "scores": {
+      "geodesic": 0.061308741453887525
+    }
+  },
+  {
+    "id": "nagoya-jp",
+    "name": "Nagoya",
+    "country": "JP",
+    "lat": 35.18147,
+    "lng": 136.90641,
+    "population": 2332176,
+    "scores": {
+      "geodesic": 0.09111280984343377
+    }
+  },
+  {
+    "id": "rome-it",
+    "name": "Rome",
+    "country": "IT",
+    "lat": 41.89193,
+    "lng": 12.51133,
+    "population": 2318895,
+    "scores": {
+      "geodesic": 0.18464892171905803
+    }
+  },
+  {
+    "id": "queens-us",
+    "name": "Queens",
+    "country": "US",
+    "lat": 40.68149,
+    "lng": -73.83652,
+    "population": 2316841,
+    "scores": {
+      "geodesic": 0.2529373850744058
+    }
+  },
+  {
+    "id": "houston-us",
+    "name": "Houston",
+    "country": "US",
+    "lat": 29.76328,
+    "lng": -95.36327,
+    "population": 2314157,
+    "scores": {
+      "geodesic": 0.24657692073424506
+    }
+  },
+  {
+    "id": "perth-au",
+    "name": "Perth",
+    "country": "AU",
+    "lat": -31.95224,
+    "lng": 115.8614,
+    "population": 2309338,
+    "scores": {
+      "geodesic": 0.6167713950928091
+    }
+  },
+  {
+    "id": "mashhad-ir",
+    "name": "Mashhad",
+    "country": "IR",
+    "lat": 36.29807,
+    "lng": 59.60567,
+    "population": 2307177,
+    "scores": {
+      "geodesic": 0.19055174088198504
+    }
+  },
+  {
+    "id": "shaoxing-cn",
+    "name": "Shaoxing",
+    "country": "CN",
+    "lat": 30.00237,
+    "lng": 120.57864,
+    "population": 2300000,
+    "scores": {
+      "geodesic": 0.010086760640071144
+    }
+  },
+  {
+    "id": "nantong-cn",
+    "name": "Nantong",
+    "country": "CN",
+    "lat": 32.03028,
+    "lng": 120.87472,
+    "population": 2273326,
+    "scores": {
+      "geodesic": 0.005292048502220597
+    }
+  },
+  {
+    "id": "baoshan-cn",
+    "name": "Baoshan",
+    "country": "CN",
+    "lat": 31.40845,
+    "lng": 121.48956,
+    "population": 2265900,
+    "scores": {
+      "geodesic": 0.001713824869503069
+    }
+  },
+  {
+    "id": "kowloon-hk",
+    "name": "Kowloon",
+    "country": "HK",
+    "lat": 22.31667,
+    "lng": 114.18333,
+    "population": 2232339,
+    "scores": {
+      "geodesic": 0.014433007028943796
+    }
+  },
+  {
+    "id": "yantai-cn",
+    "name": "Yantai",
+    "country": "CN",
+    "lat": 37.47649,
+    "lng": 121.44081,
+    "population": 2227733,
+    "scores": {
+      "geodesic": 0.05146500723426315
+    }
+  },
+  {
+    "id": "gaziantep-tr",
+    "name": "Gaziantep",
+    "country": "TR",
+    "lat": 37.05944,
+    "lng": 37.3825,
+    "population": 2222415,
+    "scores": {
+      "geodesic": 0.08759318713878796
+    }
+  },
+  {
+    "id": "lubumbashi-cd",
+    "name": "Lubumbashi",
+    "country": "CD",
+    "lat": -11.66089,
+    "lng": 27.47938,
+    "population": 2221925,
+    "scores": {
+      "geodesic": 0.2426328310547652
+    }
+  },
+  {
+    "id": "manaus-br",
+    "name": "Manaus",
+    "country": "BR",
+    "lat": -3.10194,
+    "lng": -60.025,
+    "population": 2219580,
+    "scores": {
+      "geodesic": 0.39667242449913803
+    }
+  },
+  {
+    "id": "lusaka-zm",
+    "name": "Lusaka",
+    "country": "ZM",
+    "lat": -15.40669,
+    "lng": 28.28713,
+    "population": 2212301,
+    "scores": {
+      "geodesic": 0.2506076575045512
+    }
+  },
+  {
+    "id": "bras\u00edlia-br",
+    "name": "Bras\u00edlia",
+    "country": "BR",
+    "lat": -15.77972,
+    "lng": -47.92972,
+    "population": 2207718,
+    "scores": {
+      "geodesic": 0.30977333096626525
+    }
+  },
+  {
+    "id": "zhuhai-cn",
+    "name": "Zhuhai",
+    "country": "CN",
+    "lat": 22.27694,
+    "lng": 113.56778,
+    "population": 2207090,
+    "scores": {
+      "geodesic": 0.017201220792732334
+    }
+  },
+  {
+    "id": "santo-domingo-do",
+    "name": "Santo Domingo",
+    "country": "DO",
+    "lat": 18.47186,
+    "lng": -69.89232,
+    "population": 2201941,
+    "scores": {
+      "geodesic": 0.2626916593859978
+    }
+  },
+  {
+    "id": "lom\u00e9-tg",
+    "name": "Lom\u00e9",
+    "country": "TG",
+    "lat": 6.12874,
+    "lng": 1.22154,
+    "population": 2188376,
+    "scores": {
+      "geodesic": 0.16488942719732383
+    }
+  },
+  {
+    "id": "multan-pk",
+    "name": "Multan",
+    "country": "PK",
+    "lat": 30.19679,
+    "lng": 71.47824,
+    "population": 2169915,
+    "scores": {
+      "geodesic": 0.08266743831666071
+    }
+  },
+  {
+    "id": "havana-cu",
+    "name": "Havana",
+    "country": "CU",
+    "lat": 23.13302,
+    "lng": -82.38304,
+    "population": 2163824,
+    "scores": {
+      "geodesic": 0.3042642887197034
+    }
+  },
+  {
+    "id": "baotou-cn",
+    "name": "Baotou",
+    "country": "CN",
+    "lat": 40.6516,
+    "lng": 109.84389,
+    "population": 2150000,
+    "scores": {
+      "geodesic": 0.06306273147466286
+    }
+  },
+  {
+    "id": "depok-id",
+    "name": "Depok",
+    "country": "ID",
+    "lat": -6.4,
+    "lng": 106.81861,
+    "population": 2145400,
+    "scores": {
+      "geodesic": 0.1410160673709216
+    }
+  },
+  {
+    "id": "paris-fr",
+    "name": "Paris",
+    "country": "FR",
+    "lat": 48.85341,
+    "lng": 2.3488,
+    "population": 2138551,
+    "scores": {
+      "geodesic": 0.19607115872764827
+    }
+  },
+  {
+    "id": "coimbatore-in",
+    "name": "Coimbatore",
+    "country": "IN",
+    "lat": 11.00555,
+    "lng": 76.96612,
+    "population": 2136916,
+    "scores": {
+      "geodesic": 0.1224365575838069
+    }
+  },
+  {
+    "id": "qingyang-cn",
+    "name": "Qingyang",
+    "country": "CN",
+    "lat": 35.70976,
+    "lng": 107.64455,
+    "population": 2125400,
+    "scores": {
+      "geodesic": 0.05378799994407362
+    }
+  },
+  {
+    "id": "port-harcourt-ng",
+    "name": "Port Harcourt",
+    "country": "NG",
+    "lat": 4.77742,
+    "lng": 7.0134,
+    "population": 2120000,
+    "scores": {
+      "geodesic": 0.15016860489340575
+    }
+  },
+  {
+    "id": "pretoria-za",
+    "name": "Pretoria",
+    "country": "ZA",
+    "lat": -25.74486,
+    "lng": 28.18783,
+    "population": 2112693,
+    "scores": {
+      "geodesic": 0.27064303738634227
+    }
+  },
+  {
+    "id": "c\u00f3rdoba-ar",
+    "name": "C\u00f3rdoba",
+    "country": "AR",
+    "lat": -31.40648,
+    "lng": -64.18853,
+    "population": 2106734,
+    "scores": {
+      "geodesic": 0.40261385506206804
+    }
+  },
+  {
+    "id": "mbuji-mayi-cd",
+    "name": "Mbuji-Mayi",
+    "country": "CD",
+    "lat": -6.13603,
+    "lng": 23.58979,
+    "population": 2101332,
+    "scores": {
+      "geodesic": 0.21716528235264962
+    }
+  },
+  {
+    "id": "aleppo-sy",
+    "name": "Aleppo",
+    "country": "SY",
+    "lat": 36.20124,
+    "lng": 37.16117,
+    "population": 2098210,
+    "scores": {
+      "geodesic": 0.08706638426710235
+    }
+  },
+  {
+    "id": "kunshan-cn",
+    "name": "Kunshan",
+    "country": "CN",
+    "lat": 31.37762,
+    "lng": 120.95431,
+    "population": 2092496,
+    "scores": {
+      "geodesic": 0.0012995778595138348
+    }
+  },
+  {
+    "id": "al-maw\u015fil-al-jad\u012bdah-iq",
+    "name": "Al Maw\u015fil al Jad\u012bdah",
+    "country": "IQ",
+    "lat": 36.33271,
+    "lng": 43.10555,
+    "population": 2065597,
+    "scores": {
+      "geodesic": 0.08714518529159294
+    }
+  },
+  {
+    "id": "weifang-cn",
+    "name": "Weifang",
+    "country": "CN",
+    "lat": 36.71,
+    "lng": 119.10194,
+    "population": 2044028,
+    "scores": {
+      "geodesic": 0.03348412503802519
+    }
+  },
+  {
+    "id": "zunyi-cn",
+    "name": "Zunyi",
+    "country": "CN",
+    "lat": 27.68667,
+    "lng": 106.90722,
+    "population": 2037775,
+    "scores": {
+      "geodesic": 0.052397360280309994
+    }
+  },
+  {
+    "id": "al-ba\u015frah-al-qad\u012bmah-iq",
+    "name": "Al Ba\u015frah al Qad\u012bmah",
+    "country": "IQ",
+    "lat": 30.50316,
+    "lng": 47.81507,
+    "population": 2015483,
+    "scores": {
+      "geodesic": 0.11391641552721848
+    }
+  },
+  {
+    "id": "la-paz-bo",
+    "name": "La Paz",
+    "country": "BO",
+    "lat": -16.5,
+    "lng": -68.15,
+    "population": 2004652,
+    "scores": {
+      "geodesic": 0.3611948581594068
+    }
+  },
+  {
+    "id": "lianyungang-cn",
+    "name": "Lianyungang",
+    "country": "CN",
+    "lat": 34.59845,
+    "lng": 119.21556,
+    "population": 2001009,
+    "scores": {
+      "geodesic": 0.023841215475499018
+    }
+  },
+  {
+    "id": "medell\u00edn-co",
+    "name": "Medell\u00edn",
+    "country": "CO",
+    "lat": 6.245,
+    "lng": -75.57151,
+    "population": 1999979,
+    "scores": {
+      "geodesic": 0.25266538483801204
+    }
+  },
+  {
+    "id": "indore-in",
+    "name": "Indore",
+    "country": "IN",
+    "lat": 22.71792,
+    "lng": 75.8333,
+    "population": 1994397,
+    "scores": {
+      "geodesic": 0.06715209388031528
+    }
+  },
+  {
+    "id": "brazzaville-cg",
+    "name": "Brazzaville",
+    "country": "CG",
+    "lat": -4.26613,
+    "lng": 15.28318,
+    "population": 1982000,
+    "scores": {
+      "geodesic": 0.21183861663755701
+    }
+  },
+  {
+    "id": "tashkent-uz",
+    "name": "Tashkent",
+    "country": "UZ",
+    "lat": 41.26465,
+    "lng": 69.21627,
+    "population": 1978028,
+    "scores": {
+      "geodesic": 0.17034746701094727
+    }
+  },
+  {
+    "id": "ganzhou-cn",
+    "name": "Ganzhou",
+    "country": "CN",
+    "lat": 25.84664,
+    "lng": 114.9326,
+    "population": 1977253,
+    "scores": {
+      "geodesic": 0.04945980865905544
+    }
+  },
+  {
+    "id": "almaty-kz",
+    "name": "Almaty",
+    "country": "KZ",
+    "lat": 43.25249,
+    "lng": 76.9115,
+    "population": 1977011,
+    "scores": {
+      "geodesic": 0.21152318030634332
+    }
+  },
+  {
+    "id": "khartoum-sd",
+    "name": "Khartoum",
+    "country": "SD",
+    "lat": 15.55177,
+    "lng": 32.53241,
+    "population": 1974647,
+    "scores": {
+      "geodesic": 0.2307781531259486
+    }
+  },
+  {
+    "id": "sapporo-jp",
+    "name": "Sapporo",
+    "country": "JP",
+    "lat": 43.06667,
+    "lng": 141.35,
+    "population": 1973832,
+    "scores": {
+      "geodesic": 0.19361562743974983
+    }
+  },
+  {
+    "id": "songjiang-cn",
+    "name": "Songjiang",
+    "country": "CN",
+    "lat": 31.03443,
+    "lng": 121.22326,
+    "population": 1973500,
+    "scores": {
+      "geodesic": 0.0009284058907001546
+    }
+  },
+  {
+    "id": "accra-gh",
+    "name": "Accra",
+    "country": "GH",
+    "lat": 5.55602,
+    "lng": -0.1969,
+    "population": 1963264,
+    "scores": {
+      "geodesic": 0.1722915705040517
+    }
+  },
+  {
+    "id": "curitiba-br",
+    "name": "Curitiba",
+    "country": "BR",
+    "lat": -25.42778,
+    "lng": -49.27306,
+    "population": 1948626,
+    "scores": {
+      "geodesic": 0.32455998049960005
+    }
+  },
+  {
+    "id": "ordos-cn",
+    "name": "Ordos",
+    "country": "CN",
+    "lat": 39.6086,
+    "lng": 109.78157,
+    "population": 1940653,
+    "scores": {
+      "geodesic": 0.05671746065887471
+    }
+  },
+  {
+    "id": "sanaa-ye",
+    "name": "Sanaa",
+    "country": "YE",
+    "lat": 15.35452,
+    "lng": 44.20646,
+    "population": 1937451,
+    "scores": {
+      "geodesic": 0.25462733963157275
+    }
+  },
+  {
+    "id": "conakry-gn",
+    "name": "Conakry",
+    "country": "GN",
+    "lat": 9.53795,
+    "lng": -13.67729,
+    "population": 1928389,
+    "scores": {
+      "geodesic": 0.24313245157330704
+    }
+  },
+  {
+    "id": "tijuana-mx",
+    "name": "Tijuana",
+    "country": "MX",
+    "lat": 32.5027,
+    "lng": -117.00371,
+    "population": 1922523,
+    "scores": {
+      "geodesic": 0.3416916467774589
+    }
+  },
+  {
+    "id": "hyderabad-pk",
+    "name": "Hyderabad",
+    "country": "PK",
+    "lat": 25.39689,
+    "lng": 68.37718,
+    "population": 1921275,
+    "scores": {
+      "geodesic": 0.10384229260201758
+    }
+  },
+  {
+    "id": "beirut-lb",
+    "name": "Beirut",
+    "country": "LB",
+    "lat": 33.89332,
+    "lng": 35.50157,
+    "population": 1916100,
+    "scores": {
+      "geodesic": 0.08500757080800836
+    }
+  },
+  {
+    "id": "tangerang-id",
+    "name": "Tangerang",
+    "country": "ID",
+    "lat": -6.17806,
+    "lng": 106.63,
+    "population": 1912679,
+    "scores": {
+      "geodesic": 0.1404877086325978
+    }
+  },
+  {
+    "id": "jieyang-cn",
+    "name": "Jieyang",
+    "country": "CN",
+    "lat": 23.5418,
+    "lng": 116.36581,
+    "population": 1899394,
+    "scores": {
+      "geodesic": 0.029247894790534096
+    }
+  },
+  {
+    "id": "jilin-cn",
+    "name": "Jilin",
+    "country": "CN",
+    "lat": 43.84652,
+    "lng": 126.5608,
+    "population": 1895865,
+    "scores": {
+      "geodesic": 0.09196067486669823
+    }
+  },
+  {
+    "id": "jiading-cn",
+    "name": "Jiading",
+    "country": "CN",
+    "lat": 31.38575,
+    "lng": 121.24465,
+    "population": 1886100,
+    "scores": {
+      "geodesic": 0.0009529445722649264
+    }
+  },
+  {
+    "id": "bucharest-ro",
+    "name": "Bucharest",
+    "country": "RO",
+    "lat": 44.43225,
+    "lng": 26.10626,
+    "population": 1877155,
+    "scores": {
+      "geodesic": 0.13691507398866654
+    }
+  },
+  {
+    "id": "camayenne-gn",
+    "name": "Camayenne",
+    "country": "GN",
+    "lat": 9.535,
+    "lng": -13.68778,
+    "population": 1871242,
+    "scores": {
+      "geodesic": 0.2432204830749041
+    }
+  },
+  {
+    "id": "kakamega-ke",
+    "name": "Kakamega",
+    "country": "KE",
+    "lat": 0.28422,
+    "lng": 34.75229,
+    "population": 1867579,
+    "scores": {
+      "geodesic": 0.21625992786624937
+    }
+  },
+  {
+    "id": "nanchong-cn",
+    "name": "Nanchong",
+    "country": "CN",
+    "lat": 30.79508,
+    "lng": 106.08473,
+    "population": 1858875,
+    "scores": {
+      "geodesic": 0.04948507230879334
+    }
+  },
+  {
+    "id": "tainan-tw",
+    "name": "Tainan",
+    "country": "TW",
+    "lat": 22.99083,
+    "lng": 120.21333,
+    "population": 1856642,
+    "scores": {
+      "geodesic": 0.050095099549725346
+    }
+  },
+  {
+    "id": "datong-cn",
+    "name": "Datong",
+    "country": "CN",
+    "lat": 40.09361,
+    "lng": 113.29139,
+    "population": 1850000,
+    "scores": {
+      "geodesic": 0.05364021014271352
+    }
+  },
+  {
+    "id": "kaduna-ng",
+    "name": "Kaduna",
+    "country": "NG",
+    "lat": 10.52641,
+    "lng": 7.43879,
+    "population": 1850000,
+    "scores": {
+      "geodesic": 0.16376197008273746
+    }
+  },
+  {
+    "id": "omdurman-sd",
+    "name": "Omdurman",
+    "country": "SD",
+    "lat": 15.64453,
+    "lng": 32.47773,
+    "population": 1849659,
+    "scores": {
+      "geodesic": 0.23061522858483582
+    }
+  },
+  {
+    "id": "davao-ph",
+    "name": "Davao",
+    "country": "PH",
+    "lat": 7.07306,
+    "lng": 125.61278,
+    "population": 1848947,
+    "scores": {
+      "geodesic": 0.21385574015631317
+    }
+  },
+  {
+    "id": "hamburg-de",
+    "name": "Hamburg",
+    "country": "DE",
+    "lat": 53.55073,
+    "lng": 9.99302,
+    "population": 1845229,
+    "scores": {
+      "geodesic": 0.16667475963967504
+    }
+  },
+  {
+    "id": "th\u0101ne-in",
+    "name": "Th\u0101ne",
+    "country": "IN",
+    "lat": 19.19704,
+    "lng": 72.96355,
+    "population": 1841488,
+    "scores": {
+      "geodesic": 0.046907051162213505
+    }
+  },
+  {
+    "id": "iztapalapa-mx",
+    "name": "Iztapalapa",
+    "country": "MX",
+    "lat": 19.35529,
+    "lng": -99.06224,
+    "population": 1835486,
+    "scores": {
+      "geodesic": 0.1968140200495545
+    }
+  },
+  {
+    "id": "diyarbak\u0131r-tr",
+    "name": "Diyarbak\u0131r",
+    "country": "TR",
+    "lat": 37.91363,
+    "lng": 40.21721,
+    "population": 1833684,
+    "scores": {
+      "geodesic": 0.10156600081581844
+    }
+  },
+  {
+    "id": "santa-cruz-de-la-sierra-bo",
+    "name": "Santa Cruz de la Sierra",
+    "country": "BO",
+    "lat": -17.78629,
+    "lng": -63.18117,
+    "population": 1831434,
+    "scores": {
+      "geodesic": 0.35826215896324465
+    }
+  },
+  {
+    "id": "vadodara-in",
+    "name": "Vadodara",
+    "country": "IN",
+    "lat": 22.29941,
+    "lng": 73.20812,
+    "population": 1822221,
+    "scores": {
+      "geodesic": 0.059704793596883736
+    }
+  },
+  {
+    "id": "adana-tr",
+    "name": "Adana",
+    "country": "TR",
+    "lat": 36.98615,
+    "lng": 35.32531,
+    "population": 1816750,
+    "scores": {
+      "geodesic": 0.09069185186530013
+    }
+  },
+  {
+    "id": "nanyang-cn",
+    "name": "Nanyang",
+    "country": "CN",
+    "lat": 33.00524,
+    "lng": 112.54659,
+    "population": 1811812,
+    "scores": {
+      "geodesic": 0.033474288024008855
+    }
+  },
+  {
+    "id": "abu-dhabi-ae",
+    "name": "Abu Dhabi",
+    "country": "AE",
+    "lat": 24.45118,
+    "lng": 54.39696,
+    "population": 1807000,
+    "scores": {
+      "geodesic": 0.15626884917644637
+    }
+  },
+  {
+    "id": "sharjah-ae",
+    "name": "Sharjah",
+    "country": "AE",
+    "lat": 25.3342,
+    "lng": 55.41221,
+    "population": 1800000,
+    "scores": {
+      "geodesic": 0.14936530087126615
+    }
+  },
+  {
+    "id": "bhopal-in",
+    "name": "Bhopal",
+    "country": "IN",
+    "lat": 23.25469,
+    "lng": 77.40289,
+    "population": 1798218,
+    "scores": {
+      "geodesic": 0.07065989625990123
+    }
+  },
+  {
+    "id": "jiangmen-cn",
+    "name": "Jiangmen",
+    "country": "CN",
+    "lat": 22.58333,
+    "lng": 113.08333,
+    "population": 1795459,
+    "scores": {
+      "geodesic": 0.01742551016792955
+    }
+  },
+  {
+    "id": "benin-city-ng",
+    "name": "Benin City",
+    "country": "NG",
+    "lat": 6.33815,
+    "lng": 5.62575,
+    "population": 1782000,
+    "scores": {
+      "geodesic": 0.14924318716817433
+    }
+  },
+  {
+    "id": "jiangyin-cn",
+    "name": "Jiangyin",
+    "country": "CN",
+    "lat": 31.91102,
+    "lng": 120.26302,
+    "population": 1779515,
+    "scores": {
+      "geodesic": 0.0032849898651636424
+    }
+  },
+  {
+    "id": "fuyang-cn",
+    "name": "Fuyang",
+    "country": "CN",
+    "lat": 32.9,
+    "lng": 115.81667,
+    "population": 1768947,
+    "scores": {
+      "geodesic": 0.023692487433268825
+    }
+  },
+  {
+    "id": "montr\u00e9al-ca",
+    "name": "Montr\u00e9al",
+    "country": "CA",
+    "lat": 45.50884,
+    "lng": -73.58781,
+    "population": 1762949,
+    "scores": {
+      "geodesic": 0.32609908996699927
+    }
+  },
+  {
+    "id": "bayan-nur-cn",
+    "name": "Bayan Nur",
+    "country": "CN",
+    "lat": 40.74143,
+    "lng": 107.38599,
+    "population": 1760000,
+    "scores": {
+      "geodesic": 0.08021693057202361
+    }
+  },
+  {
+    "id": "maracaibo-ve",
+    "name": "Maracaibo",
+    "country": "VE",
+    "lat": 10.64232,
+    "lng": -71.61089,
+    "population": 1752602,
+    "scores": {
+      "geodesic": 0.24589864585771554
+    }
+  },
+  {
+    "id": "chaozhou-cn",
+    "name": "Chaozhou",
+    "country": "CN",
+    "lat": 23.65396,
+    "lng": 116.62262,
+    "population": 1750945,
+    "scores": {
+      "geodesic": 0.029850671492790627
+    }
+  },
+  {
+    "id": "minsk-by",
+    "name": "Minsk",
+    "country": "BY",
+    "lat": 53.90019,
+    "lng": 27.56653,
+    "population": 1742124,
+    "scores": {
+      "geodesic": 0.1697829183478232
+    }
+  },
+  {
+    "id": "budapest-hu",
+    "name": "Budapest",
+    "country": "HU",
+    "lat": 47.49835,
+    "lng": 19.04045,
+    "population": 1741041,
+    "scores": {
+      "geodesic": 0.13690493701228454
+    }
+  },
+  {
+    "id": "qingyuan-cn",
+    "name": "Qingyuan",
+    "country": "CN",
+    "lat": 23.7,
+    "lng": 113.03333,
+    "population": 1738424,
+    "scores": {
+      "geodesic": 0.022232877380789575
+    }
+  },
+  {
+    "id": "tai\u2019an-cn",
+    "name": "Tai\u2019an",
+    "country": "CN",
+    "lat": 36.18528,
+    "lng": 117.12,
+    "population": 1735425,
+    "scores": {
+      "geodesic": 0.022462704865877824
+    }
+  },
+  {
+    "id": "rasap\u016bdipalem-in",
+    "name": "Rasap\u016bdipalem",
+    "country": "IN",
+    "lat": 17.73308,
+    "lng": 83.31622,
+    "population": 1728128,
+    "scores": {
+      "geodesic": 0.10631986616860012
+    }
+  },
+  {
+    "id": "pimpri-chinchwad-in",
+    "name": "Pimpri-Chinchwad",
+    "country": "IN",
+    "lat": 18.61867,
+    "lng": 73.80375,
+    "population": 1727692,
+    "scores": {
+      "geodesic": 0.049011982108656905
+    }
+  },
+  {
+    "id": "caloocan-ph",
+    "name": "Caloocan",
+    "country": "PH",
+    "lat": 14.64953,
+    "lng": 120.96788,
+    "population": 1712945,
+    "scores": {
+      "geodesic": 0.11145506770747965
+    }
+  },
+  {
+    "id": "warsaw-pl",
+    "name": "Warsaw",
+    "country": "PL",
+    "lat": 52.22977,
+    "lng": 21.01178,
+    "population": 1702139,
+    "scores": {
+      "geodesic": 0.1597610900855564
+    }
+  },
+  {
+    "id": "soweto-za",
+    "name": "Soweto",
+    "country": "ZA",
+    "lat": -26.26781,
+    "lng": 27.85849,
+    "population": 1695047,
+    "scores": {
+      "geodesic": 0.27388424985807774
+    }
+  },
+  {
+    "id": "puebla-mx",
+    "name": "Puebla",
+    "country": "MX",
+    "lat": 19.04778,
+    "lng": -98.20723,
+    "population": 1692181,
+    "scores": {
+      "geodesic": 0.2046199023308233
+    }
+  },
+  {
+    "id": "vienna-at",
+    "name": "Vienna",
+    "country": "AT",
+    "lat": 48.20849,
+    "lng": 16.37208,
+    "population": 1691468,
+    "scores": {
+      "geodesic": 0.13700665316822544
+    }
+  },
+  {
+    "id": "barcelona-es",
+    "name": "Barcelona",
+    "country": "ES",
+    "lat": 41.38879,
+    "lng": 2.15899,
+    "population": 1686208,
+    "scores": {
+      "geodesic": 0.21815561080833348
+    }
+  },
+  {
+    "id": "patna-in",
+    "name": "Patna",
+    "country": "IN",
+    "lat": 25.59408,
+    "lng": 85.13563,
+    "population": 1684297,
+    "scores": {
+      "geodesic": 0.08814336893815669
+    }
+  },
+  {
+    "id": "mosul-iq",
+    "name": "Mosul",
+    "country": "IQ",
+    "lat": 36.335,
+    "lng": 43.11889,
+    "population": 1683000,
+    "scores": {
+      "geodesic": 0.08714993539197148
+    }
+  },
+  {
+    "id": "kallakurichi-in",
+    "name": "Kallakurichi",
+    "country": "IN",
+    "lat": 11.73379,
+    "lng": 78.95925,
+    "population": 1682687,
+    "scores": {
+      "geodesic": 0.11630117528545822
+    }
+  },
+  {
+    "id": "kampala-ug",
+    "name": "Kampala",
+    "country": "UG",
+    "lat": 0.31628,
+    "lng": 32.58219,
+    "population": 1680600,
+    "scores": {
+      "geodesic": 0.2117492500982074
+    }
+  },
+  {
+    "id": "xining-cn",
+    "name": "Xining",
+    "country": "CN",
+    "lat": 36.62554,
+    "lng": 101.75739,
+    "population": 1677177,
+    "scores": {
+      "geodesic": 0.10024870207690402
+    }
+  },
+  {
+    "id": "changshu-cn",
+    "name": "Changshu",
+    "country": "CN",
+    "lat": 31.64615,
+    "lng": 120.74221,
+    "population": 1677050,
+    "scores": {
+      "geodesic": 0.0022156429506849707
+    }
+  },
+  {
+    "id": "palembang-id",
+    "name": "Palembang",
+    "country": "ID",
+    "lat": -2.91673,
+    "lng": 104.7458,
+    "population": 1668848,
+    "scores": {
+      "geodesic": 0.16370288335076663
+    }
+  },
+  {
+    "id": "huainan-cn",
+    "name": "Huainan",
+    "country": "CN",
+    "lat": 32.62639,
+    "lng": 116.99694,
+    "population": 1666826,
+    "scores": {
+      "geodesic": 0.02060619399261046
+    }
+  },
+  {
+    "id": "rabat-ma",
+    "name": "Rabat",
+    "country": "MA",
+    "lat": 34.01325,
+    "lng": -6.83255,
+    "population": 1655753,
+    "scores": {
+      "geodesic": 0.2580054847048243
+    }
+  },
+  {
+    "id": "semarang-id",
+    "name": "Semarang",
+    "country": "ID",
+    "lat": -6.99306,
+    "lng": 110.42083,
+    "population": 1653524,
+    "scores": {
+      "geodesic": 0.16695156727989777
+    }
+  },
+  {
+    "id": "recife-br",
+    "name": "Recife",
+    "country": "BR",
+    "lat": -8.05389,
+    "lng": -34.88111,
+    "population": 1653461,
+    "scores": {
+      "geodesic": 0.3969045665291148
+    }
+  },
+  {
+    "id": "phoenix-us",
+    "name": "Phoenix",
+    "country": "US",
+    "lat": 33.44838,
+    "lng": -112.07404,
+    "population": 1650070,
+    "scores": {
+      "geodesic": 0.3265752062543121
+    }
+  },
+  {
+    "id": "suzhou-cn",
+    "name": "Suzhou",
+    "country": "CN",
+    "lat": 33.63611,
+    "lng": 116.97889,
+    "population": 1647642,
+    "scores": {
+      "geodesic": 0.01653038859364409
+    }
+  },
+  {
+    "id": "ecatepec-de-morelos-mx",
+    "name": "Ecatepec de Morelos",
+    "country": "MX",
+    "lat": 19.60492,
+    "lng": -99.06064,
+    "population": 1645352,
+    "scores": {
+      "geodesic": 0.19605699403459315
+    }
+  },
+  {
+    "id": "lu\u2019an-cn",
+    "name": "Lu\u2019an",
+    "country": "CN",
+    "lat": 31.73561,
+    "lng": 116.51688,
+    "population": 1644344,
+    "scores": {
+      "geodesic": 0.024966339571308775
+    }
+  },
+  {
+    "id": "valencia-ve",
+    "name": "Valencia",
+    "country": "VE",
+    "lat": 10.16153,
+    "lng": -68.00044,
+    "population": 1619470,
+    "scores": {
+      "geodesic": 0.2531166609999699
+    }
+  },
+  {
+    "id": "ludhiana-in",
+    "name": "Ludhiana",
+    "country": "IN",
+    "lat": 30.91204,
+    "lng": 75.85379,
+    "population": 1618879,
+    "scores": {
+      "geodesic": 0.06510950949503205
+    }
+  },
+  {
+    "id": "yancheng-cn",
+    "name": "Yancheng",
+    "country": "CN",
+    "lat": 33.3575,
+    "lng": 120.1573,
+    "population": 1615717,
+    "scores": {
+      "geodesic": 0.01885935448003379
+    }
+  },
+  {
+    "id": "novosibirsk-ru",
+    "name": "Novosibirsk",
+    "country": "RU",
+    "lat": 55.02259,
+    "lng": 82.93175,
+    "population": 1612833,
+    "scores": {
+      "geodesic": 0.29695969589914084
+    }
+  },
+  {
+    "id": "erbil-iq",
+    "name": "Erbil",
+    "country": "IQ",
+    "lat": 36.19117,
+    "lng": 44.00943,
+    "population": 1612700,
+    "scores": {
+      "geodesic": 0.09193789604229441
+    }
+  },
+  {
+    "id": "fukuoka-jp",
+    "name": "Fukuoka",
+    "country": "JP",
+    "lat": 33.6,
+    "lng": 130.41667,
+    "population": 1612392,
+    "scores": {
+      "geodesic": 0.07753948624380064
+    }
+  },
+  {
+    "id": "taizhou-cn",
+    "name": "Taizhou",
+    "country": "CN",
+    "lat": 32.49069,
+    "lng": 119.90812,
+    "population": 1607108,
+    "scores": {
+      "geodesic": 0.009087897248395678
+    }
+  },
+  {
+    "id": "daqing-cn",
+    "name": "Daqing",
+    "country": "CN",
+    "lat": 46.58333,
+    "lng": 125.0,
+    "population": 1604027,
+    "scores": {
+      "geodesic": 0.12093537543062174
+    }
+  },
+  {
+    "id": "manila-ph",
+    "name": "Manila",
+    "country": "PH",
+    "lat": 14.6042,
+    "lng": 120.9822,
+    "population": 1600000,
+    "scores": {
+      "geodesic": 0.11173800480607576
+    }
+  },
+  {
+    "id": "wuhu-cn",
+    "name": "Wuhu",
+    "country": "CN",
+    "lat": 31.35259,
+    "lng": 118.42947,
+    "population": 1598165,
+    "scores": {
+      "geodesic": 0.017633593988912597
+    }
+  },
+  {
+    "id": "santiago-de-quer\u00e9taro-mx",
+    "name": "Santiago de Quer\u00e9taro",
+    "country": "MX",
+    "lat": 20.58806,
+    "lng": -100.38806,
+    "population": 1594212,
+    "scores": {
+      "geodesic": 0.2078020595312831
+    }
+  },
+  {
+    "id": "dazhou-cn",
+    "name": "Dazhou",
+    "country": "CN",
+    "lat": 31.2106,
+    "lng": 107.46308,
+    "population": 1589435,
+    "scores": {
+      "geodesic": 0.048022532480793544
+    }
+  },
+  {
+    "id": "yangzhou-cn",
+    "name": "Yangzhou",
+    "country": "CN",
+    "lat": 32.39722,
+    "lng": 119.43583,
+    "population": 1584237,
+    "scores": {
+      "geodesic": 0.009942735359086607
+    }
+  },
+  {
+    "id": "le\u00f3n-de-los-aldama-mx",
+    "name": "Le\u00f3n de los Aldama",
+    "country": "MX",
+    "lat": 21.12908,
+    "lng": -101.67374,
+    "population": 1579803,
+    "scores": {
+      "geodesic": 0.214504389575196
+    }
+  },
+  {
+    "id": "makkah-sa",
+    "name": "Makkah",
+    "country": "SA",
+    "lat": 21.42664,
+    "lng": 39.82563,
+    "population": 1578722,
+    "scores": {
+      "geodesic": 0.17055501682550467
+    }
+  },
+  {
+    "id": "philadelphia-us",
+    "name": "Philadelphia",
+    "country": "US",
+    "lat": 39.95238,
+    "lng": -75.16362,
+    "population": 1573916,
+    "scores": {
+      "geodesic": 0.25658944507313786
+    }
+  },
+  {
+    "id": "phnom-penh-kh",
+    "name": "Phnom Penh",
+    "country": "KH",
+    "lat": 11.56245,
+    "lng": 104.91601,
+    "population": 1573544,
+    "scores": {
+      "geodesic": 0.13245586699315567
+    }
+  },
+  {
+    "id": "guilin-cn",
+    "name": "Guilin",
+    "country": "CN",
+    "lat": 25.28022,
+    "lng": 110.29639,
+    "population": 1572300,
+    "scores": {
+      "geodesic": 0.04980201272172958
+    }
+  },
+  {
+    "id": "damascus-sy",
+    "name": "Damascus",
+    "country": "SY",
+    "lat": 33.5102,
+    "lng": 36.29128,
+    "population": 1569394,
+    "scores": {
+      "geodesic": 0.08915829519309346
+    }
+  },
+  {
+    "id": "quetta-pk",
+    "name": "Quetta",
+    "country": "PK",
+    "lat": 30.18414,
+    "lng": 67.00141,
+    "population": 1565546,
+    "scores": {
+      "geodesic": 0.12482407704660828
+    }
+  },
+  {
+    "id": "zhaoqing-cn",
+    "name": "Zhaoqing",
+    "country": "CN",
+    "lat": 23.04893,
+    "lng": 112.46091,
+    "population": 1553109,
+    "scores": {
+      "geodesic": 0.02086916014952789
+    }
+  },
+  {
+    "id": "onitsha-ng",
+    "name": "Onitsha",
+    "country": "NG",
+    "lat": 6.14978,
+    "lng": 6.78569,
+    "population": 1553000,
+    "scores": {
+      "geodesic": 0.14793193940182275
+    }
+  },
+  {
+    "id": "mianyang-cn",
+    "name": "Mianyang",
+    "country": "CN",
+    "lat": 31.46784,
+    "lng": 104.68168,
+    "population": 1550000,
+    "scores": {
+      "geodesic": 0.055421343786523816
+    }
+  },
+  {
+    "id": "isfahan-ir",
+    "name": "Isfahan",
+    "country": "IR",
+    "lat": 32.65246,
+    "lng": 51.67462,
+    "population": 1547164,
+    "scores": {
+      "geodesic": 0.1325025678092968
+    }
+  },
+  {
+    "id": "wanzhou-cn",
+    "name": "Wanzhou",
+    "country": "CN",
+    "lat": 30.76451,
+    "lng": 108.39586,
+    "population": 1545900,
+    "scores": {
+      "geodesic": 0.04944400872288026
+    }
+  },
+  {
+    "id": "harare-zw",
+    "name": "Harare",
+    "country": "ZW",
+    "lat": -17.82772,
+    "lng": 31.05337,
+    "population": 1542813,
+    "scores": {
+      "geodesic": 0.2626588747105368
+    }
+  },
+  {
+    "id": "monrovia-lr",
+    "name": "Monrovia",
+    "country": "LR",
+    "lat": 6.30054,
+    "lng": -10.7969,
+    "population": 1542549,
+    "scores": {
+      "geodesic": 0.2538247275396558
+    }
+  },
+  {
+    "id": "putian-cn",
+    "name": "Putian",
+    "country": "CN",
+    "lat": 25.43944,
+    "lng": 119.01028,
+    "population": 1539389,
+    "scores": {
+      "geodesic": 0.03453373904974226
+    }
+  },
+  {
+    "id": "kawasaki-jp",
+    "name": "Kawasaki",
+    "country": "JP",
+    "lat": 35.52056,
+    "lng": 139.71722,
+    "population": 1538262,
+    "scores": {
+      "geodesic": 0.101657291367798
+    }
+  },
+  {
+    "id": "shangqiu-cn",
+    "name": "Shangqiu",
+    "country": "CN",
+    "lat": 34.45,
+    "lng": 115.65,
+    "population": 1536392,
+    "scores": {
+      "geodesic": 0.0191983983172776
+    }
+  },
+  {
+    "id": "goi\u00e2nia-br",
+    "name": "Goi\u00e2nia",
+    "country": "BR",
+    "lat": -16.67861,
+    "lng": -49.25389,
+    "population": 1536097,
+    "scores": {
+      "geodesic": 0.3080362096842352
+    }
+  },
+  {
+    "id": "auckland-nz",
+    "name": "Auckland",
+    "country": "NZ",
+    "lat": -36.84853,
+    "lng": 174.76349,
+    "population": 1530500,
+    "scores": {
+      "geodesic": 1.0
+    }
+  },
+  {
+    "id": "san-antonio-us",
+    "name": "San Antonio",
+    "country": "US",
+    "lat": 29.42412,
+    "lng": -98.49363,
+    "population": 1526656,
+    "scores": {
+      "geodesic": 0.24278524112563538
+    }
+  },
+  {
+    "id": "kobe-jp",
+    "name": "Kobe",
+    "country": "JP",
+    "lat": 34.6913,
+    "lng": 135.183,
+    "population": 1525152,
+    "scores": {
+      "geodesic": 0.0808316152772491
+    }
+  },
+  {
+    "id": "stockholm-se",
+    "name": "Stockholm",
+    "country": "SE",
+    "lat": 59.32938,
+    "lng": 18.06871,
+    "population": 1515017,
+    "scores": {
+      "geodesic": 0.20373052997757818
+    }
+  },
+  {
+    "id": "ciudad-ju\u00e1rez-mx",
+    "name": "Ciudad Ju\u00e1rez",
+    "country": "MX",
+    "lat": 31.72024,
+    "lng": -106.46084,
+    "population": 1512450,
+    "scores": {
+      "geodesic": 0.30154403344805114
+    }
+  },
+  {
+    "id": "c\u1ea7n-th\u01a1-vn",
+    "name": "C\u1ea7n Th\u01a1",
+    "country": "VN",
+    "lat": 10.03711,
+    "lng": 105.78825,
+    "population": 1507187,
+    "scores": {
+      "geodesic": 0.13594754891698027
+    }
+  },
+  {
+    "id": "khulna-bd",
+    "name": "Khulna",
+    "country": "BD",
+    "lat": 22.80979,
+    "lng": 89.56439,
+    "population": 1500689,
+    "scores": {
+      "geodesic": 0.10030201080724464
+    }
+  },
+  {
+    "id": "bel\u00e9m-br",
+    "name": "Bel\u00e9m",
+    "country": "BR",
+    "lat": -1.45583,
+    "lng": -48.50444,
+    "population": 1499641,
+    "scores": {
+      "geodesic": 0.4105951258351554
+    }
+  },
+  {
+    "id": "yekaterinburg-ru",
+    "name": "Yekaterinburg",
+    "country": "RU",
+    "lat": 56.85733,
+    "lng": 60.61529,
+    "population": 1495066,
+    "scores": {
+      "geodesic": 0.22695464793816775
+    }
+  },
+  {
+    "id": "porto-alegre-br",
+    "name": "Porto Alegre",
+    "country": "BR",
+    "lat": -30.03283,
+    "lng": -51.23019,
+    "population": 1488252,
+    "scores": {
+      "geodesic": 0.37028386232827837
+    }
+  },
+  {
+    "id": "yinchuan-cn",
+    "name": "Yinchuan",
+    "country": "CN",
+    "lat": 38.46806,
+    "lng": 106.27306,
+    "population": 1487579,
+    "scores": {
+      "geodesic": 0.06628890762479811
+    }
+  },
+  {
+    "id": "manhattan-us",
+    "name": "Manhattan",
+    "country": "US",
+    "lat": 40.78343,
+    "lng": -73.96625,
+    "population": 1487536,
+    "scores": {
+      "geodesic": 0.2526243986657303
+    }
+  },
+  {
+    "id": "nashik-in",
+    "name": "Nashik",
+    "country": "IN",
+    "lat": 19.99727,
+    "lng": 73.79096,
+    "population": 1486053,
+    "scores": {
+      "geodesic": 0.05234207119195438
+    }
+  },
+  {
+    "id": "taizhou-cn",
+    "name": "Taizhou",
+    "country": "CN",
+    "lat": 28.66266,
+    "lng": 121.43312,
+    "population": 1485502,
+    "scores": {
+      "geodesic": 0.026198933997254804
+    }
+  },
+  {
+    "id": "asunci\u00f3n-py",
+    "name": "Asunci\u00f3n",
+    "country": "PY",
+    "lat": -25.28646,
+    "lng": -57.647,
+    "population": 1482200,
+    "scores": {
+      "geodesic": 0.36363033488315555
+    }
+  },
+  {
+    "id": "yiwu-cn",
+    "name": "Yiwu",
+    "country": "CN",
+    "lat": 29.31506,
+    "lng": 120.07676,
+    "population": 1481384,
+    "scores": {
+      "geodesic": 0.013842443506759313
+    }
+  },
+  {
+    "id": "zapopan-mx",
+    "name": "Zapopan",
+    "country": "MX",
+    "lat": 20.72111,
+    "lng": -103.38742,
+    "population": 1476491,
+    "scores": {
+      "geodesic": 0.22355785803966055
+    }
+  },
+  {
+    "id": "adelaide-au",
+    "name": "Adelaide",
+    "country": "AU",
+    "lat": -34.92866,
+    "lng": 138.59863,
+    "population": 1469163,
+    "scores": {
+      "geodesic": 0.6046517815201485
+    }
+  },
+  {
+    "id": "quanzhou-cn",
+    "name": "Quanzhou",
+    "country": "CN",
+    "lat": 24.91389,
+    "lng": 118.58583,
+    "population": 1469157,
+    "scores": {
+      "geodesic": 0.03122087787943482
+    }
+  },
+  {
+    "id": "madurai-in",
+    "name": "Madurai",
+    "country": "IN",
+    "lat": 9.919,
+    "lng": 78.11953,
+    "population": 1465625,
+    "scores": {
+      "geodesic": 0.13148206709939395
+    }
+  },
+  {
+    "id": "jinhua-cn",
+    "name": "Jinhua",
+    "country": "CN",
+    "lat": 29.10678,
+    "lng": 119.64421,
+    "population": 1463990,
+    "scores": {
+      "geodesic": 0.017986717084900215
+    }
+  },
+  {
+    "id": "kyoto-jp",
+    "name": "Kyoto",
+    "country": "JP",
+    "lat": 35.02107,
+    "lng": 135.75385,
+    "population": 1463723,
+    "scores": {
+      "geodesic": 0.08231529983259075
+    }
+  },
+  {
+    "id": "cixi-cn",
+    "name": "Cixi",
+    "country": "CN",
+    "lat": 30.1764,
+    "lng": 121.2457,
+    "population": 1457510,
+    "scores": {
+      "geodesic": 0.009422562529793087
+    }
+  },
+  {
+    "id": "changde-cn",
+    "name": "Changde",
+    "country": "CN",
+    "lat": 29.03205,
+    "lng": 111.69844,
+    "population": 1457419,
+    "scores": {
+      "geodesic": 0.04464885962171582
+    }
+  },
+  {
+    "id": "kuala-lumpur-my",
+    "name": "Kuala Lumpur",
+    "country": "MY",
+    "lat": 3.1412,
+    "lng": 101.68653,
+    "population": 1453975,
+    "scores": {
+      "geodesic": 0.16746401664202396
+    }
+  },
+  {
+    "id": "kayseri-tr",
+    "name": "Kayseri",
+    "country": "TR",
+    "lat": 38.73222,
+    "lng": 35.48528,
+    "population": 1452458,
+    "scores": {
+      "geodesic": 0.0971437022582014
+    }
+  },
+  {
+    "id": "kaifeng-cn",
+    "name": "Kaifeng",
+    "country": "CN",
+    "lat": 34.7986,
+    "lng": 114.30742,
+    "population": 1451741,
+    "scores": {
+      "geodesic": 0.02151254463109015
+    }
+  },
+  {
+    "id": "anshan-cn",
+    "name": "Anshan",
+    "country": "CN",
+    "lat": 41.12361,
+    "lng": 122.99,
+    "population": 1450000,
+    "scores": {
+      "geodesic": 0.06375834765023895
+    }
+  },
+  {
+    "id": "karaj-ir",
+    "name": "Karaj",
+    "country": "IR",
+    "lat": 35.83266,
+    "lng": 50.99155,
+    "population": 1448075,
+    "scores": {
+      "geodesic": 0.12212165571795262
+    }
+  },
+  {
+    "id": "kathmandu-np",
+    "name": "Kathmandu",
+    "country": "NP",
+    "lat": 27.70169,
+    "lng": 85.3206,
+    "population": 1442271,
+    "scores": {
+      "geodesic": 0.10429446974708383
+    }
+  },
+  {
+    "id": "daejeon-kr",
+    "name": "Daejeon",
+    "country": "KR",
+    "lat": 36.34913,
+    "lng": 127.38493,
+    "population": 1441203,
+    "scores": {
+      "geodesic": 0.05426244941751038
+    }
+  },
+  {
+    "id": "baoji-cn",
+    "name": "Baoji",
+    "country": "CN",
+    "lat": 34.36775,
+    "lng": 107.23705,
+    "population": 1437802,
+    "scores": {
+      "geodesic": 0.05183410530601385
+    }
+  },
+  {
+    "id": "suqian-cn",
+    "name": "Suqian",
+    "country": "CN",
+    "lat": 33.94917,
+    "lng": 118.29583,
+    "population": 1437685,
+    "scores": {
+      "geodesic": 0.01872853824205757
+    }
+  },
+  {
+    "id": "liuzhou-cn",
+    "name": "Liuzhou",
+    "country": "CN",
+    "lat": 24.32405,
+    "lng": 109.40698,
+    "population": 1436599,
+    "scores": {
+      "geodesic": 0.046003284857704566
+    }
+  },
+  {
+    "id": "tirunelveli-in",
+    "name": "Tirunelveli",
+    "country": "IN",
+    "lat": 8.72742,
+    "lng": 77.6838,
+    "population": 1435844,
+    "scores": {
+      "geodesic": 0.14971465811402307
+    }
+  },
+  {
+    "id": "konya-tr",
+    "name": "Konya",
+    "country": "TR",
+    "lat": 37.87135,
+    "lng": 32.48464,
+    "population": 1433861,
+    "scores": {
+      "geodesic": 0.09903335042227619
+    }
+  },
+  {
+    "id": "zhangjiagang-cn",
+    "name": "Zhangjiagang",
+    "country": "CN",
+    "lat": 31.865,
+    "lng": 120.53889,
+    "population": 1432044,
+    "scores": {
+      "geodesic": 0.002727971140488506
+    }
+  },
+  {
+    "id": "agra-in",
+    "name": "Agra",
+    "country": "IN",
+    "lat": 27.18333,
+    "lng": 78.01667,
+    "population": 1430055,
+    "scores": {
+      "geodesic": 0.06064356956249676
+    }
+  },
+  {
+    "id": "tabriz-ir",
+    "name": "Tabriz",
+    "country": "IR",
+    "lat": 38.08,
+    "lng": 46.2919,
+    "population": 1424641,
+    "scores": {
+      "geodesic": 0.11460457383672645
+    }
+  },
+  {
+    "id": "makassar-id",
+    "name": "Makassar",
+    "country": "ID",
+    "lat": -5.14861,
+    "lng": 119.43194,
+    "population": 1423877,
+    "scores": {
+      "geodesic": 0.2777813411508842
+    }
+  },
+  {
+    "id": "kharkiv-ua",
+    "name": "Kharkiv",
+    "country": "UA",
+    "lat": 49.98177,
+    "lng": 36.25475,
+    "population": 1421125,
+    "scores": {
+      "geodesic": 0.1651123216629128
+    }
+  },
+  {
+    "id": "jinjiang-cn",
+    "name": "Jinjiang",
+    "country": "CN",
+    "lat": 24.81978,
+    "lng": 118.57415,
+    "population": 1416151,
+    "scores": {
+      "geodesic": 0.031253468479210136
+    }
+  },
+  {
+    "id": "faridabad-in",
+    "name": "Faridabad",
+    "country": "IN",
+    "lat": 28.41124,
+    "lng": 77.31316,
+    "population": 1414050,
+    "scores": {
+      "geodesic": 0.04897694027407492
+    }
+  },
+  {
+    "id": "bozhou-cn",
+    "name": "Bozhou",
+    "country": "CN",
+    "lat": 33.87722,
+    "lng": 115.77028,
+    "population": 1409436,
+    "scores": {
+      "geodesic": 0.019213838298878773
+    }
+  },
+  {
+    "id": "qujing-cn",
+    "name": "Qujing",
+    "country": "CN",
+    "lat": 25.48333,
+    "lng": 103.78333,
+    "population": 1408500,
+    "scores": {
+      "geodesic": 0.07088654103032824
+    }
+  },
+  {
+    "id": "south-tangerang-id",
+    "name": "South Tangerang",
+    "country": "ID",
+    "lat": -6.28862,
+    "lng": 106.71789,
+    "population": 1404785,
+    "scores": {
+      "geodesic": 0.14037906607229947
+    }
+  },
+  {
+    "id": "san-diego-us",
+    "name": "San Diego",
+    "country": "US",
+    "lat": 32.71571,
+    "lng": -117.16472,
+    "population": 1404452,
+    "scores": {
+      "geodesic": 0.3431832135968741
+    }
+  },
+  {
+    "id": "gwangju-kr",
+    "name": "Gwangju",
+    "country": "KR",
+    "lat": 35.15472,
+    "lng": 126.91556,
+    "population": 1401235,
+    "scores": {
+      "geodesic": 0.05648989999137373
+    }
+  },
+  {
+    "id": "zhanjiang-cn",
+    "name": "Zhanjiang",
+    "country": "CN",
+    "lat": 21.23391,
+    "lng": 110.38749,
+    "population": 1400709,
+    "scores": {
+      "geodesic": 0.040798349580476206
+    }
+  },
+  {
+    "id": "fushun-cn",
+    "name": "Fushun",
+    "country": "CN",
+    "lat": 41.88669,
+    "lng": 123.94363,
+    "population": 1400646,
+    "scores": {
+      "geodesic": 0.06719910060083903
+    }
+  },
+  {
+    "id": "r\u0101jkot-in",
+    "name": "R\u0101jkot",
+    "country": "IN",
+    "lat": 22.29161,
+    "lng": 70.79322,
+    "population": 1390640,
+    "scores": {
+      "geodesic": 0.07848963616581654
+    }
+  },
+  {
+    "id": "luoyang-cn",
+    "name": "Luoyang",
+    "country": "CN",
+    "lat": 34.67345,
+    "lng": 112.43684,
+    "population": 1390581,
+    "scores": {
+      "geodesic": 0.03259425306713799
+    }
+  },
+  {
+    "id": "guadalajara-mx",
+    "name": "Guadalajara",
+    "country": "MX",
+    "lat": 20.67738,
+    "lng": -103.34749,
+    "population": 1385629,
+    "scores": {
+      "geodesic": 0.22321548229006882
+    }
+  },
+  {
+    "id": "the-bronx-us",
+    "name": "The Bronx",
+    "country": "US",
+    "lat": 40.84985,
+    "lng": -73.86641,
+    "population": 1385108,
+    "scores": {
+      "geodesic": 0.25371921685183585
+    }
+  },
+  {
+    "id": "guankou-cn",
+    "name": "Guankou",
+    "country": "CN",
+    "lat": 28.15861,
+    "lng": 113.62709,
+    "population": 1380000,
+    "scores": {
+      "geodesic": 0.03867716417632711
+    }
+  },
+  {
+    "id": "hu\u1ebf-vn",
+    "name": "Hu\u1ebf",
+    "country": "VN",
+    "lat": 16.4619,
+    "lng": 107.59546,
+    "population": 1380000,
+    "scores": {
+      "geodesic": 0.09869431117875138
+    }
+  },
+  {
+    "id": "milan-it",
+    "name": "Milan",
+    "country": "IT",
+    "lat": 45.46427,
+    "lng": 9.18951,
+    "population": 1371498,
+    "scores": {
+      "geodesic": 0.17035982809439518
+    }
+  },
+  {
+    "id": "najafgarh-in",
+    "name": "Najafgarh",
+    "country": "IN",
+    "lat": 28.60922,
+    "lng": 76.97982,
+    "population": 1365000,
+    "scores": {
+      "geodesic": 0.048973345569285634
+    }
+  },
+  {
+    "id": "n'djamena-td",
+    "name": "N'Djamena",
+    "country": "TD",
+    "lat": 12.10672,
+    "lng": 15.0444,
+    "population": 1359526,
+    "scores": {
+      "geodesic": 0.21644412776249064
+    }
+  },
+  {
+    "id": "handan-cn",
+    "name": "Handan",
+    "country": "CN",
+    "lat": 36.60999,
+    "lng": 114.48764,
+    "population": 1358318,
+    "scores": {
+      "geodesic": 0.02593297953114408
+    }
+  },
+  {
+    "id": "bannu-pk",
+    "name": "Bannu",
+    "country": "PK",
+    "lat": 32.98527,
+    "lng": 70.60403,
+    "population": 1357890,
+    "scores": {
+      "geodesic": 0.0885876978153714
+    }
+  },
+  {
+    "id": "yichang-cn",
+    "name": "Yichang",
+    "country": "CN",
+    "lat": 30.71444,
+    "lng": 111.28472,
+    "population": 1350150,
+    "scores": {
+      "geodesic": 0.04684658213153608
+    }
+  },
+  {
+    "id": "antananarivo-mg",
+    "name": "Antananarivo",
+    "country": "MG",
+    "lat": -18.91368,
+    "lng": 47.53613,
+    "population": 1349501,
+    "scores": {
+      "geodesic": 0.4465319802430297
+    }
+  },
+  {
+    "id": "heze-cn",
+    "name": "Heze",
+    "country": "CN",
+    "lat": 35.23929,
+    "lng": 115.47358,
+    "population": 1346717,
+    "scores": {
+      "geodesic": 0.021442726890459812
+    }
+  },
+  {
+    "id": "abobo-ci",
+    "name": "Abobo",
+    "country": "CI",
+    "lat": 5.41613,
+    "lng": -4.0159,
+    "population": 1340083,
+    "scores": {
+      "geodesic": 0.18972643997089925
+    }
+  },
+  {
+    "id": "jamshedpur-in",
+    "name": "Jamshedpur",
+    "country": "IN",
+    "lat": 22.80278,
+    "lng": 86.18545,
+    "population": 1339438,
+    "scores": {
+      "geodesic": 0.084363998514683
+    }
+  },
+  {
+    "id": "douala-cm",
+    "name": "Douala",
+    "country": "CM",
+    "lat": 4.04827,
+    "lng": 9.70428,
+    "population": 1338082,
+    "scores": {
+      "geodesic": 0.16828100236231344
+    }
+  },
+  {
+    "id": "antalya-tr",
+    "name": "Antalya",
+    "country": "TR",
+    "lat": 36.90812,
+    "lng": 30.69556,
+    "population": 1335002,
+    "scores": {
+      "geodesic": 0.10890878493355388
+    }
+  },
+  {
+    "id": "basrah-iq",
+    "name": "Basrah",
+    "country": "IQ",
+    "lat": 30.50852,
+    "lng": 47.7804,
+    "population": 1326564,
+    "scores": {
+      "geodesic": 0.11382548415509391
+    }
+  },
+  {
+    "id": "dallas-us",
+    "name": "Dallas",
+    "country": "US",
+    "lat": 32.78306,
+    "lng": -96.80667,
+    "population": 1326087,
+    "scores": {
+      "geodesic": 0.2676205848007435
+    }
+  },
+  {
+    "id": "saitama-jp",
+    "name": "Saitama",
+    "country": "JP",
+    "lat": 35.90807,
+    "lng": 139.65657,
+    "population": 1324854,
+    "scores": {
+      "geodesic": 0.10185787595314846
+    }
+  },
+  {
+    "id": "gorakhpur-in",
+    "name": "Gorakhpur",
+    "country": "IN",
+    "lat": 29.44768,
+    "lng": 75.67206,
+    "population": 1324570,
+    "scores": {
+      "geodesic": 0.06085721976004822
+    }
+  },
+  {
+    "id": "niamey-ne",
+    "name": "Niamey",
+    "country": "NE",
+    "lat": 13.51366,
+    "lng": 2.1098,
+    "population": 1323691,
+    "scores": {
+      "geodesic": 0.20259251148890145
+    }
+  },
+  {
+    "id": "liupanshui-cn",
+    "name": "Liupanshui",
+    "country": "CN",
+    "lat": 26.59444,
+    "lng": 104.83333,
+    "population": 1320825,
+    "scores": {
+      "geodesic": 0.058508356675461747
+    }
+  },
+  {
+    "id": "taguig-ph",
+    "name": "Taguig",
+    "country": "PH",
+    "lat": 14.5243,
+    "lng": 121.0792,
+    "population": 1308085,
+    "scores": {
+      "geodesic": 0.11310379147415175
+    }
+  },
+  {
+    "id": "maoming-cn",
+    "name": "Maoming",
+    "country": "CN",
+    "lat": 21.66625,
+    "lng": 110.91364,
+    "population": 1307802,
+    "scores": {
+      "geodesic": 0.035808739277676915
+    }
+  },
+  {
+    "id": "calgary-ca",
+    "name": "Calgary",
+    "country": "CA",
+    "lat": 51.05011,
+    "lng": -114.08529,
+    "population": 1306784,
+    "scores": {
+      "geodesic": 0.5540031670525288
+    }
+  },
+  {
+    "id": "tripoli-ly",
+    "name": "Tripoli",
+    "country": "LY",
+    "lat": 32.88743,
+    "lng": 13.18733,
+    "population": 1302947,
+    "scores": {
+      "geodesic": 0.274342613301721
+    }
+  },
+  {
+    "id": "callao-pe",
+    "name": "Callao",
+    "country": "PE",
+    "lat": -12.05162,
+    "lng": -77.13452,
+    "population": 1300000,
+    "scores": {
+      "geodesic": 0.34443921474796885
+    }
+  },
+  {
+    "id": "madinah-sa",
+    "name": "Madinah",
+    "country": "SA",
+    "lat": 24.46861,
+    "lng": 39.61417,
+    "population": 1300000,
+    "scores": {
+      "geodesic": 0.16371279624052446
+    }
+  },
+  {
+    "id": "yaound\u00e9-cm",
+    "name": "Yaound\u00e9",
+    "country": "CM",
+    "lat": 3.86667,
+    "lng": 11.51667,
+    "population": 1299369,
+    "scores": {
+      "geodesic": 0.18207665004681467
+    }
+  },
+  {
+    "id": "qinzhou-cn",
+    "name": "Qinzhou",
+    "country": "CN",
+    "lat": 21.98247,
+    "lng": 108.65061,
+    "population": 1296300,
+    "scores": {
+      "geodesic": 0.04780390325123809
+    }
+  },
+  {
+    "id": "luohe-cn",
+    "name": "Luohe",
+    "country": "CN",
+    "lat": 33.56394,
+    "lng": 114.04272,
+    "population": 1294974,
+    "scores": {
+      "geodesic": 0.024474523961020983
+    }
+  },
+  {
+    "id": "xiangyang-cn",
+    "name": "Xiangyang",
+    "country": "CN",
+    "lat": 32.0422,
+    "lng": 112.14479,
+    "population": 1294733,
+    "scores": {
+      "geodesic": 0.03762661184304101
+    }
+  },
+  {
+    "id": "yangjiang-cn",
+    "name": "Yangjiang",
+    "country": "CN",
+    "lat": 21.85563,
+    "lng": 111.96272,
+    "population": 1292987,
+    "scores": {
+      "geodesic": 0.031340978412727365
+    }
+  },
+  {
+    "id": "yixing-cn",
+    "name": "Yixing",
+    "country": "CN",
+    "lat": 31.36059,
+    "lng": 119.82016,
+    "population": 1285785,
+    "scores": {
+      "geodesic": 0.006132377538867515
+    }
+  },
+  {
+    "id": "pimpri-in",
+    "name": "Pimpri",
+    "country": "IN",
+    "lat": 18.62292,
+    "lng": 73.80696,
+    "population": 1284606,
+    "scores": {
+      "geodesic": 0.04899039404812347
+    }
+  },
+  {
+    "id": "da-nang-vn",
+    "name": "Da Nang",
+    "country": "VN",
+    "lat": 16.06778,
+    "lng": 108.22083,
+    "population": 1276000,
+    "scores": {
+      "geodesic": 0.10069576291176424
+    }
+  },
+  {
+    "id": "amman-jo",
+    "name": "Amman",
+    "country": "JO",
+    "lat": 31.95522,
+    "lng": 35.94503,
+    "population": 1275857,
+    "scores": {
+      "geodesic": 0.10327079113701602
+    }
+  },
+  {
+    "id": "budta-ph",
+    "name": "Budta",
+    "country": "PH",
+    "lat": 7.20417,
+    "lng": 124.43972,
+    "population": 1273715,
+    "scores": {
+      "geodesic": 0.19915052359542534
+    }
+  },
+  {
+    "id": "belgrade-rs",
+    "name": "Belgrade",
+    "country": "RS",
+    "lat": 44.80401,
+    "lng": 20.46513,
+    "population": 1273651,
+    "scores": {
+      "geodesic": 0.14232692561058174
+    }
+  },
+  {
+    "id": "bi\u00ean-h\u00f2a-vn",
+    "name": "Bi\u00ean H\u00f2a",
+    "country": "VN",
+    "lat": 10.94469,
+    "lng": 106.82432,
+    "population": 1272235,
+    "scores": {
+      "geodesic": 0.12557915618121998
+    }
+  },
+  {
+    "id": "qingpu-cn",
+    "name": "Qingpu",
+    "country": "CN",
+    "lat": 31.15394,
+    "lng": 121.11408,
+    "population": 1271424,
+    "scores": {
+      "geodesic": 0.0006159806942173184
+    }
+  },
+  {
+    "id": "montevideo-uy",
+    "name": "Montevideo",
+    "country": "UY",
+    "lat": -34.90328,
+    "lng": -56.18816,
+    "population": 1270737,
+    "scores": {
+      "geodesic": 0.4010718849186699
+    }
+  },
+  {
+    "id": "xuchang-cn",
+    "name": "Xuchang",
+    "country": "CN",
+    "lat": 34.03189,
+    "lng": 113.86299,
+    "population": 1265536,
+    "scores": {
+      "geodesic": 0.022829598165516954
+    }
+  },
+  {
+    "id": "kaly\u0101n-in",
+    "name": "Kaly\u0101n",
+    "country": "IN",
+    "lat": 19.2437,
+    "lng": 73.13554,
+    "population": 1262255,
+    "scores": {
+      "geodesic": 0.046056198525966256
+    }
+  },
+  {
+    "id": "zigong-cn",
+    "name": "Zigong",
+    "country": "CN",
+    "lat": 29.34162,
+    "lng": 104.77689,
+    "population": 1262064,
+    "scores": {
+      "geodesic": 0.04997273031569112
+    }
+  },
+  {
+    "id": "munich-de",
+    "name": "Munich",
+    "country": "DE",
+    "lat": 48.13743,
+    "lng": 11.57549,
+    "population": 1260391,
+    "scores": {
+      "geodesic": 0.15152988118733388
+    }
+  },
+  {
+    "id": "nizhniy-novgorod-ru",
+    "name": "Nizhniy Novgorod",
+    "country": "RU",
+    "lat": 56.32867,
+    "lng": 44.00205,
+    "population": 1259013,
+    "scores": {
+      "geodesic": 0.1929027892951311
+    }
+  },
+  {
+    "id": "jepara-id",
+    "name": "Jepara",
+    "country": "ID",
+    "lat": -6.5924,
+    "lng": 110.671,
+    "population": 1257912,
+    "scores": {
+      "geodesic": 0.16579218399792214
+    }
+  },
+  {
+    "id": "maputo-mz",
+    "name": "Maputo",
+    "country": "MZ",
+    "lat": -25.96553,
+    "lng": 32.58322,
+    "population": 1254837,
+    "scores": {
+      "geodesic": 0.2858279869877214
+    }
+  },
+  {
+    "id": "xuzhou-cn",
+    "name": "Xuzhou",
+    "country": "CN",
+    "lat": 34.20442,
+    "lng": 117.28386,
+    "population": 1253991,
+    "scores": {
+      "geodesic": 0.01726094722398262
+    }
+  },
+  {
+    "id": "dammam-sa",
+    "name": "Dammam",
+    "country": "SA",
+    "lat": 26.43442,
+    "lng": 50.10326,
+    "population": 1252523,
+    "scores": {
+      "geodesic": 0.1509370464855264
+    }
+  },
+  {
+    "id": "ra\u2019s-bayr\u016bt-lb",
+    "name": "Ra\u2019s Bayr\u016bt",
+    "country": "LB",
+    "lat": 33.9,
+    "lng": 35.48333,
+    "population": 1251739,
+    "scores": {
+      "geodesic": 0.08505251628395487
+    }
+  },
+  {
+    "id": "neijiang-cn",
+    "name": "Neijiang",
+    "country": "CN",
+    "lat": 29.58354,
+    "lng": 105.06216,
+    "population": 1251095,
+    "scores": {
+      "geodesic": 0.0481961448418218
+    }
+  },
+  {
+    "id": "shiraz-ir",
+    "name": "Shiraz",
+    "country": "IR",
+    "lat": 29.61031,
+    "lng": 52.53113,
+    "population": 1249942,
+    "scores": {
+      "geodesic": 0.14237373704681486
+    }
+  },
+  {
+    "id": "heshan-cn",
+    "name": "Heshan",
+    "country": "CN",
+    "lat": 28.56938,
+    "lng": 112.34733,
+    "population": 1249807,
+    "scores": {
+      "geodesic": 0.0412754111244052
+    }
+  },
+  {
+    "id": "dombivali-in",
+    "name": "Dombivali",
+    "country": "IN",
+    "lat": 19.21667,
+    "lng": 73.08333,
+    "population": 1247327,
+    "scores": {
+      "geodesic": 0.04608593127520054
+    }
+  },
+  {
+    "id": "kananga-cd",
+    "name": "Kananga",
+    "country": "CD",
+    "lat": -5.89624,
+    "lng": 22.41659,
+    "population": 1247168,
+    "scores": {
+      "geodesic": 0.21780543092361185
+    }
+  },
+  {
+    "id": "kazan-ru",
+    "name": "Kazan",
+    "country": "RU",
+    "lat": 55.78874,
+    "lng": 49.12214,
+    "population": 1243500,
+    "scores": {
+      "geodesic": 0.19509596942693666
+    }
+  },
+  {
+    "id": "jining-cn",
+    "name": "Jining",
+    "country": "CN",
+    "lat": 35.405,
+    "lng": 116.58139,
+    "population": 1241012,
+    "scores": {
+      "geodesic": 0.021814355242950122
+    }
+  },
+  {
+    "id": "barquisimeto-ve",
+    "name": "Barquisimeto",
+    "country": "VE",
+    "lat": 10.0647,
+    "lng": -69.35703,
+    "population": 1240714,
+    "scores": {
+      "geodesic": 0.24721596774384544
+    }
+  },
+  {
+    "id": "shubr\u0101-al-khaymah-eg",
+    "name": "Shubr\u0101 al Khaymah",
+    "country": "EG",
+    "lat": 30.12511,
+    "lng": 31.25053,
+    "population": 1240289,
+    "scores": {
+      "geodesic": 0.11313278796502542
+    }
+  },
+  {
+    "id": "putuo-cn",
+    "name": "Putuo",
+    "country": "CN",
+    "lat": 31.251,
+    "lng": 121.3897,
+    "population": 1239100,
+    "scores": {
+      "geodesic": 0.0
+    }
+  },
+  {
+    "id": "port-au-prince-ht",
+    "name": "Port-au-Prince",
+    "country": "HT",
+    "lat": 18.54349,
+    "lng": -72.33881,
+    "population": 1234742,
+    "scores": {
+      "geodesic": 0.25719013723578105
+    }
+  },
+  {
+    "id": "suwon-kr",
+    "name": "Suwon",
+    "country": "KR",
+    "lat": 37.29111,
+    "lng": 127.00889,
+    "population": 1234582,
+    "scores": {
+      "geodesic": 0.05095149475980916
+    }
+  },
+  {
+    "id": "xinyang-cn",
+    "name": "Xinyang",
+    "country": "CN",
+    "lat": 32.12278,
+    "lng": 114.06556,
+    "population": 1230042,
+    "scores": {
+      "geodesic": 0.03424768662890985
+    }
+  },
+  {
+    "id": "liaocheng-cn",
+    "name": "Liaocheng",
+    "country": "CN",
+    "lat": 36.45064,
+    "lng": 116.00247,
+    "population": 1229768,
+    "scores": {
+      "geodesic": 0.024732249274944895
+    }
+  },
+  {
+    "id": "jinzhong-cn",
+    "name": "Jinzhong",
+    "country": "CN",
+    "lat": 37.68403,
+    "lng": 112.75471,
+    "population": 1226617,
+    "scores": {
+      "geodesic": 0.03275259125762091
+    }
+  },
+  {
+    "id": "meerut-in",
+    "name": "Meerut",
+    "country": "IN",
+    "lat": 28.98002,
+    "lng": 77.70636,
+    "population": 1223184,
+    "scores": {
+      "geodesic": 0.05321109082154849
+    }
+  },
+  {
+    "id": "vir\u0101r-in",
+    "name": "Vir\u0101r",
+    "country": "IN",
+    "lat": 19.45591,
+    "lng": 72.81136,
+    "population": 1222390,
+    "scores": {
+      "geodesic": 0.04897338318147053
+    }
+  },
+  {
+    "id": "nowrangapur-in",
+    "name": "Nowrangapur",
+    "country": "IN",
+    "lat": 19.23114,
+    "lng": 82.54826,
+    "population": 1220946,
+    "scores": {
+      "geodesic": 0.0956663326189402
+    }
+  },
+  {
+    "id": "karbala-iq",
+    "name": "Karbala",
+    "country": "IQ",
+    "lat": 32.61603,
+    "lng": 44.02488,
+    "population": 1218732,
+    "scores": {
+      "geodesic": 0.10558251624017553
+    }
+  },
+  {
+    "id": "changzhi-cn",
+    "name": "Changzhi",
+    "country": "CN",
+    "lat": 36.18389,
+    "lng": 113.10528,
+    "population": 1214940,
+    "scores": {
+      "geodesic": 0.0308761007690471
+    }
+  },
+  {
+    "id": "tianshui-cn",
+    "name": "Tianshui",
+    "country": "CN",
+    "lat": 34.57952,
+    "lng": 105.74238,
+    "population": 1212791,
+    "scores": {
+      "geodesic": 0.05977251684506072
+    }
+  },
+  {
+    "id": "yangpu-cn",
+    "name": "Yangpu",
+    "country": "CN",
+    "lat": 31.26193,
+    "lng": 121.51904,
+    "population": 1210800,
+    "scores": {
+      "geodesic": 0.0005679709680616216
+    }
+  },
+  {
+    "id": "mombasa-ke",
+    "name": "Mombasa",
+    "country": "KE",
+    "lat": -4.05466,
+    "lng": 39.66359,
+    "population": 1208333,
+    "scores": {
+      "geodesic": 0.2516740742027343
+    }
+  },
+  {
+    "id": "mandalay-mm",
+    "name": "Mandalay",
+    "country": "MM",
+    "lat": 21.97473,
+    "lng": 96.08359,
+    "population": 1208099,
+    "scores": {
+      "geodesic": 0.1480093206879518
+    }
+  },
+  {
+    "id": "srinagar-in",
+    "name": "Srinagar",
+    "country": "IN",
+    "lat": 34.08565,
+    "lng": 74.80555,
+    "population": 1206419,
+    "scores": {
+      "geodesic": 0.08915184362730348
+    }
+  },
+  {
+    "id": "barranquilla-co",
+    "name": "Barranquilla",
+    "country": "CO",
+    "lat": 10.96854,
+    "lng": -74.78132,
+    "population": 1206319,
+    "scores": {
+      "geodesic": 0.2535274197442077
+    }
+  },
+  {
+    "id": "chelyabinsk-ru",
+    "name": "Chelyabinsk",
+    "country": "RU",
+    "lat": 55.1611,
+    "lng": 61.42877,
+    "population": 1202371,
+    "scores": {
+      "geodesic": 0.22036340341622307
+    }
+  },
+  {
+    "id": "m\u00e9rida-mx",
+    "name": "M\u00e9rida",
+    "country": "MX",
+    "lat": 20.967,
+    "lng": -89.62318,
+    "population": 1201000,
+    "scores": {
+      "geodesic": 0.2737524701820454
+    }
+  },
+  {
+    "id": "hiroshima-jp",
+    "name": "Hiroshima",
+    "country": "JP",
+    "lat": 34.4,
+    "lng": 132.45,
+    "population": 1200754,
+    "scores": {
+      "geodesic": 0.08307989590794305
+    }
+  },
+  {
+    "id": "santiago-de-los-caballeros-do",
+    "name": "Santiago de los Caballeros",
+    "country": "DO",
+    "lat": 19.45036,
+    "lng": -70.69085,
+    "population": 1200000,
+    "scores": {
+      "geodesic": 0.2630186583729393
+    }
+  },
+  {
+    "id": "shymkent-kz",
+    "name": "Shymkent",
+    "country": "KZ",
+    "lat": 42.30988,
+    "lng": 69.60042,
+    "population": 1200000,
+    "scores": {
+      "geodesic": 0.17886868650813184
+    }
+  },
+  {
+    "id": "weinan-cn",
+    "name": "Weinan",
+    "country": "CN",
+    "lat": 34.50355,
+    "lng": 109.50891,
+    "population": 1199290,
+    "scores": {
+      "geodesic": 0.043806387322044726
+    }
+  },
+  {
+    "id": "gh\u0101zi\u0101b\u0101d-in",
+    "name": "Gh\u0101zi\u0101b\u0101d",
+    "country": "IN",
+    "lat": 28.66535,
+    "lng": 77.43915,
+    "population": 1199191,
+    "scores": {
+      "geodesic": 0.049256822999566255
+    }
+  },
+  {
+    "id": "matola-mz",
+    "name": "Matola",
+    "country": "MZ",
+    "lat": -25.96222,
+    "lng": 32.45889,
+    "population": 1198988,
+    "scores": {
+      "geodesic": 0.28492000081716373
+    }
+  },
+  {
+    "id": "dhanbad-in",
+    "name": "Dhanbad",
+    "country": "IN",
+    "lat": 23.79759,
+    "lng": 86.42992,
+    "population": 1196214,
+    "scores": {
+      "geodesic": 0.08432908013235656
+    }
+  },
+  {
+    "id": "hong-kong-island-hk",
+    "name": "Hong Kong Island",
+    "country": "HK",
+    "lat": 22.26302,
+    "lng": 114.18419,
+    "population": 1195529,
+    "scores": {
+      "geodesic": 0.014788896670060113
+    }
+  },
+  {
+    "id": "fes-ma",
+    "name": "Fes",
+    "country": "MA",
+    "lat": 34.03313,
+    "lng": -5.00028,
+    "population": 1191905,
+    "scores": {
+      "geodesic": 0.25358969671277354
+    }
+  },
+  {
+    "id": "gustavo-adolfo-madero-mx",
+    "name": "Gustavo Adolfo Madero",
+    "country": "MX",
+    "lat": 19.49392,
+    "lng": -99.11075,
+    "population": 1185772,
+    "scores": {
+      "geodesic": 0.19597528508520803
+    }
+  },
+  {
+    "id": "nouakchott-mr",
+    "name": "Nouakchott",
+    "country": "MR",
+    "lat": 18.08581,
+    "lng": -15.9785,
+    "population": 1184530,
+    "scores": {
+      "geodesic": 0.29157298706296203
+    }
+  },
+  {
+    "id": "kisangani-cd",
+    "name": "Kisangani",
+    "country": "CD",
+    "lat": 0.51528,
+    "lng": 25.19099,
+    "population": 1181788,
+    "scores": {
+      "geodesic": 0.237510837557548
+    }
+  },
+  {
+    "id": "jiaxing-cn",
+    "name": "Jiaxing",
+    "country": "CN",
+    "lat": 30.7522,
+    "lng": 120.75,
+    "population": 1180000,
+    "scores": {
+      "geodesic": 0.005340509137406697
+    }
+  },
+  {
+    "id": "aurangabad-in",
+    "name": "Aurangabad",
+    "country": "IN",
+    "lat": 19.87757,
+    "lng": 75.34226,
+    "population": 1175116,
+    "scores": {
+      "geodesic": 0.061034623376494894
+    }
+  },
+  {
+    "id": "omsk-ru",
+    "name": "Omsk",
+    "country": "RU",
+    "lat": 54.99244,
+    "lng": 73.36859,
+    "population": 1172070,
+    "scores": {
+      "geodesic": 0.27363963403039165
+    }
+  },
+  {
+    "id": "guarulhos-br",
+    "name": "Guarulhos",
+    "country": "BR",
+    "lat": -23.46278,
+    "lng": -46.53333,
+    "population": 1169577,
+    "scores": {
+      "geodesic": 0.3032520896534487
+    }
+  },
+  {
+    "id": "bandar-lampung-id",
+    "name": "Bandar Lampung",
+    "country": "ID",
+    "lat": -5.42917,
+    "lng": 105.26111,
+    "population": 1166066,
+    "scores": {
+      "geodesic": 0.15558958266390102
+    }
+  },
+  {
+    "id": "prague-cz",
+    "name": "Prague",
+    "country": "CZ",
+    "lat": 50.08804,
+    "lng": 14.42076,
+    "population": 1165581,
+    "scores": {
+      "geodesic": 0.14228798152470953
+    }
+  },
+  {
+    "id": "varanasi-in",
+    "name": "Varanasi",
+    "country": "IN",
+    "lat": 25.31668,
+    "lng": 83.01041,
+    "population": 1164404,
+    "scores": {
+      "geodesic": 0.08186777983075187
+    }
+  },
+  {
+    "id": "batam-id",
+    "name": "Batam",
+    "country": "ID",
+    "lat": 1.14937,
+    "lng": 104.02491,
+    "population": 1164352,
+    "scores": {
+      "geodesic": 0.1486492508042479
+    }
+  },
+  {
+    "id": "jiujiang-cn",
+    "name": "Jiujiang",
+    "country": "CN",
+    "lat": 29.70475,
+    "lng": 116.00206,
+    "population": 1164268,
+    "scores": {
+      "geodesic": 0.03692165809821576
+    }
+  },
+  {
+    "id": "samara-ru",
+    "name": "Samara",
+    "country": "RU",
+    "lat": 53.20767,
+    "lng": 50.13553,
+    "population": 1163399,
+    "scores": {
+      "geodesic": 0.1911598763340965
+    }
+  },
+  {
+    "id": "aba-ng",
+    "name": "Aba",
+    "country": "NG",
+    "lat": 5.10658,
+    "lng": 7.36667,
+    "population": 1160000,
+    "scores": {
+      "geodesic": 0.14883242057315071
+    }
+  },
+  {
+    "id": "amritsar-in",
+    "name": "Amritsar",
+    "country": "IN",
+    "lat": 31.62234,
+    "lng": 74.87534,
+    "population": 1159227,
+    "scores": {
+      "geodesic": 0.06273871509263612
+    }
+  },
+  {
+    "id": "birmingham-gb",
+    "name": "Birmingham",
+    "country": "GB",
+    "lat": 52.48142,
+    "lng": -1.89983,
+    "population": 1157603,
+    "scores": {
+      "geodesic": 0.22278824406764308
+    }
+  },
+  {
+    "id": "copenhagen-dk",
+    "name": "Copenhagen",
+    "country": "DK",
+    "lat": 55.67594,
+    "lng": 12.56553,
+    "population": 1153615,
+    "scores": {
+      "geodesic": 0.17301956547927239
+    }
+  },
+  {
+    "id": "sofia-bg",
+    "name": "Sofia",
+    "country": "BG",
+    "lat": 42.69751,
+    "lng": 23.32415,
+    "population": 1152556,
+    "scores": {
+      "geodesic": 0.1390621014360949
+    }
+  },
+  {
+    "id": "anyang-cn",
+    "name": "Anyang",
+    "country": "CN",
+    "lat": 36.096,
+    "lng": 114.38278,
+    "population": 1146839,
+    "scores": {
+      "geodesic": 0.0241365514655098
+    }
+  },
+  {
+    "id": "yerevan-am",
+    "name": "Yerevan",
+    "country": "AM",
+    "lat": 40.17765,
+    "lng": 44.5126,
+    "population": 1144700,
+    "scores": {
+      "geodesic": 0.12401528426181185
+    }
+  },
+  {
+    "id": "luohu-district-cn",
+    "name": "Luohu District",
+    "country": "CN",
+    "lat": 22.54721,
+    "lng": 114.13149,
+    "population": 1143801,
+    "scores": {
+      "geodesic": 0.01377674944490623
+    }
+  },
+  {
+    "id": "vijayawada-in",
+    "name": "Vijayawada",
+    "country": "IN",
+    "lat": 16.50745,
+    "lng": 80.6466,
+    "population": 1143232,
+    "scores": {
+      "geodesic": 0.0994666717051156
+    }
+  },
+  {
+    "id": "fengxiang-cn",
+    "name": "Fengxiang",
+    "country": "CN",
+    "lat": 30.85841,
+    "lng": 121.46779,
+    "population": 1140872,
+    "scores": {
+      "geodesic": 0.0037043384755526734
+    }
+  },
+  {
+    "id": "bijie-cn",
+    "name": "Bijie",
+    "country": "CN",
+    "lat": 27.30193,
+    "lng": 105.28627,
+    "population": 1137383,
+    "scores": {
+      "geodesic": 0.05438952759197314
+    }
+  },
+  {
+    "id": "monterrey-mx",
+    "name": "Monterrey",
+    "country": "MX",
+    "lat": 25.68435,
+    "lng": -100.31721,
+    "population": 1135512,
+    "scores": {
+      "geodesic": 0.24056710061897377
+    }
+  },
+  {
+    "id": "kigali-rw",
+    "name": "Kigali",
+    "country": "RW",
+    "lat": -1.94995,
+    "lng": 30.05885,
+    "population": 1132686,
+    "scores": {
+      "geodesic": 0.2129808547823075
+    }
+  },
+  {
+    "id": "rostov-on-don-ru",
+    "name": "Rostov-on-Don",
+    "country": "RU",
+    "lat": 47.21997,
+    "lng": 39.70769,
+    "population": 1130305,
+    "scores": {
+      "geodesic": 0.1724111565500727
+    }
+  },
+  {
+    "id": "zhuzhou-cn",
+    "name": "Zhuzhou",
+    "country": "CN",
+    "lat": 27.83333,
+    "lng": 113.15,
+    "population": 1129687,
+    "scores": {
+      "geodesic": 0.03861110148375021
+    }
+  },
+  {
+    "id": "bogor-id",
+    "name": "Bogor",
+    "country": "ID",
+    "lat": -6.59444,
+    "lng": 106.78917,
+    "population": 1127408,
+    "scores": {
+      "geodesic": 0.1434875256109368
+    }
+  },
+  {
+    "id": "malingao-ph",
+    "name": "Malingao",
+    "country": "PH",
+    "lat": 7.16083,
+    "lng": 124.475,
+    "population": 1121974,
+    "scores": {
+      "geodesic": 0.1997423323079901
+    }
+  },
+  {
+    "id": "touba-sn",
+    "name": "Touba",
+    "country": "SN",
+    "lat": 14.86229,
+    "lng": -15.87532,
+    "population": 1120824,
+    "scores": {
+      "geodesic": 0.267374211169425
+    }
+  },
+  {
+    "id": "ufa-ru",
+    "name": "Ufa",
+    "country": "RU",
+    "lat": 54.74306,
+    "lng": 55.96779,
+    "population": 1120547,
+    "scores": {
+      "geodesic": 0.2082836132701679
+    }
+  },
+  {
+    "id": "ranchi-in",
+    "name": "Ranchi",
+    "country": "IN",
+    "lat": 23.34316,
+    "lng": 85.3094,
+    "population": 1120374,
+    "scores": {
+      "geodesic": 0.08122068851487634
+    }
+  },
+  {
+    "id": "shangrao-cn",
+    "name": "Shangrao",
+    "country": "CN",
+    "lat": 28.45179,
+    "lng": 117.94287,
+    "population": 1116486,
+    "scores": {
+      "geodesic": 0.03675406393036191
+    }
+  },
+  {
+    "id": "lilongwe-mw",
+    "name": "Lilongwe",
+    "country": "MW",
+    "lat": -13.96692,
+    "lng": 33.78725,
+    "population": 1115815,
+    "scores": {
+      "geodesic": 0.267621032504781
+    }
+  },
+  {
+    "id": "huaibei-cn",
+    "name": "Huaibei",
+    "country": "CN",
+    "lat": 33.97444,
+    "lng": 116.79167,
+    "population": 1113321,
+    "scores": {
+      "geodesic": 0.016197717325176452
+    }
+  },
+  {
+    "id": "maiduguri-ng",
+    "name": "Maiduguri",
+    "country": "NG",
+    "lat": 11.84692,
+    "lng": 13.15712,
+    "population": 1110000,
+    "scores": {
+      "geodesic": 0.19935109874698173
+    }
+  },
+  {
+    "id": "xuhui-cn",
+    "name": "Xuhui",
+    "country": "CN",
+    "lat": 31.19594,
+    "lng": 121.44709,
+    "population": 1109800,
+    "scores": {
+      "geodesic": 6.467862064526488e-05
+    }
+  },
+  {
+    "id": "meishan-cn",
+    "name": "Meishan",
+    "country": "CN",
+    "lat": 30.04392,
+    "lng": 103.83696,
+    "population": 1107742,
+    "scores": {
+      "geodesic": 0.05651269771665198
+    }
+  },
+  {
+    "id": "mwanza-tz",
+    "name": "Mwanza",
+    "country": "TZ",
+    "lat": -2.51667,
+    "lng": 32.9,
+    "population": 1104521,
+    "scores": {
+      "geodesic": 0.2130525117601323
+    }
+  },
+  {
+    "id": "ulsan-kr",
+    "name": "Ulsan",
+    "country": "KR",
+    "lat": 35.53722,
+    "lng": 129.31667,
+    "population": 1098421,
+    "scores": {
+      "geodesic": 0.059127058576458925
+    }
+  },
+  {
+    "id": "sendai-jp",
+    "name": "Sendai",
+    "country": "JP",
+    "lat": 38.26667,
+    "lng": 140.86667,
+    "population": 1096704,
+    "scores": {
+      "geodesic": 0.13544811093715448
+    }
+  },
+  {
+    "id": "krasnoyarsk-ru",
+    "name": "Krasnoyarsk",
+    "country": "RU",
+    "lat": 56.03742,
+    "lng": 92.93136,
+    "population": 1090811,
+    "scores": {
+      "geodesic": 0.3239099094535525
+    }
+  },
+  {
+    "id": "fuzhou-cn",
+    "name": "Fuzhou",
+    "country": "CN",
+    "lat": 27.95999,
+    "lng": 116.33333,
+    "population": 1089888,
+    "scores": {
+      "geodesic": 0.040256239870517366
+    }
+  },
+  {
+    "id": "guigang-cn",
+    "name": "Guigang",
+    "country": "CN",
+    "lat": 23.11603,
+    "lng": 109.59472,
+    "population": 1086327,
+    "scores": {
+      "geodesic": 0.04164058205518399
+    }
+  },
+  {
+    "id": "pekanbaru-id",
+    "name": "Pekanbaru",
+    "country": "ID",
+    "lat": 0.51667,
+    "lng": 101.44167,
+    "population": 1085000,
+    "scores": {
+      "geodesic": 0.16999754177300747
+    }
+  },
+  {
+    "id": "oslo-no",
+    "name": "Oslo",
+    "country": "NO",
+    "lat": 59.91273,
+    "lng": 10.74609,
+    "population": 1082575,
+    "scores": {
+      "geodesic": 0.2219128219946645
+    }
+  },
+  {
+    "id": "jabalpur-in",
+    "name": "Jabalpur",
+    "country": "IN",
+    "lat": 23.16697,
+    "lng": 79.95006,
+    "population": 1081677,
+    "scores": {
+      "geodesic": 0.0789969213916512
+    }
+  }
+]
