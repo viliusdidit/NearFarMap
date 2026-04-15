@@ -7,6 +7,7 @@ import { useDataStore } from './stores/useDataStore'
 import { useGlobeStore } from './stores/useGlobeStore'
 import { WeightSliders } from './components/UI/WeightSliders'
 import { Legend } from './components/UI/Legend'
+import { scoreToColor } from './lib/colorRamp'
 import type { City } from './types/city'
 
 const DEG_TO_RAD = Math.PI / 180
@@ -84,6 +85,9 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     if (!origRef.current) {
       origRef.current = new Float32Array(positions.length)
       origRef.current.set(positions)
+      // Pre-init vertex colors to white so vertexColors material works from start
+      const initColors = new Float32Array(vertexCount * 3).fill(1.0)
+      geo.setAttribute('color', new THREE.BufferAttribute(initColors, 3))
     }
 
     // Initialize IDW computation
@@ -143,7 +147,7 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
       idwProgressRef.current = end
 
       // Apply displacement for computed vertices so far
-      applyDisplacement(positions, origRef.current, vertexScoresRef.current!, metrics, displacementScale, end)
+      applyDisplacement(geo, positions, origRef.current, vertexScoresRef.current!, metrics, displacementScale, end)
       geo.attributes.position.needsUpdate = true
       if (end === vertexCount) {
         geo.computeVertexNormals()
@@ -159,7 +163,7 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     if (prevScaleRef.current !== displacementScale || prevWeightsRef.current !== weightsKey) {
       prevScaleRef.current = displacementScale
       prevWeightsRef.current = weightsKey
-      applyDisplacement(positions, origRef.current, vertexScoresRef.current!, metrics, displacementScale, vertexCount)
+      applyDisplacement(geo, positions, origRef.current!, vertexScoresRef.current!, metrics, displacementScale, vertexCount)
       geo.attributes.position.needsUpdate = true
       geo.computeVertexNormals()
       placeCityPoints()
@@ -167,6 +171,7 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
   })
 
   function applyDisplacement(
+    geo: THREE.BufferGeometry,
     positions: Float32Array, orig: Float32Array,
     scores: VertexScores, metrics: typeof useGlobeStore.getState extends () => infer S ? S['metrics'] : never,
     scale: number, count: number
@@ -174,6 +179,14 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     let totalWeight = 0
     for (const m of metrics) totalWeight += m.weight
     if (totalWeight === 0) totalWeight = 1
+
+    // Ensure color attribute exists
+    let colorAttr = geo.getAttribute('color') as THREE.BufferAttribute | null
+    if (!colorAttr || colorAttr.count !== count) {
+      colorAttr = new THREE.BufferAttribute(new Float32Array(count * 3), 3)
+      geo.setAttribute('color', colorAttr)
+    }
+    const colors = colorAttr.array as Float32Array
 
     for (let i = 0; i < count; i++) {
       const x = orig[i * 3], y = orig[i * 3 + 1], z = orig[i * 3 + 2]
@@ -191,7 +204,15 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
       positions[i * 3] = (x / r) * s
       positions[i * 3 + 1] = (y / r) * s
       positions[i * 3 + 2] = (z / r) * s
+
+      const [cr, cg, cb] = scoreToColor(blended)
+      const tint = blended * 0.7
+      colors[i * 3] = 1.0 - tint + cr * tint
+      colors[i * 3 + 1] = 1.0 - tint + cg * tint
+      colors[i * 3 + 2] = 1.0 - tint + cb * tint
     }
+
+    colorAttr.needsUpdate = true
   }
 
   function placeCityPoints() {
@@ -293,7 +314,7 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     <>
       <mesh ref={meshRef} onClick={handleGlobeClick}>
         <sphereGeometry args={[1, 128, 64]} />
-        <meshBasicMaterial ref={matRef} color="#2244aa" />
+        <meshBasicMaterial ref={matRef} color="#2244aa" vertexColors />
       </mesh>
       <instancedMesh
         ref={pointsRef}
