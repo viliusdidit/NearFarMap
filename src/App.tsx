@@ -106,7 +106,7 @@ function Scene({ onCityClick, onZoom, onProgress }: { onCityClick: (city: City |
 
   // Load texture
   useEffect(() => {
-    new THREE.TextureLoader().load('/textures/earth-diffuse.jpg', (tex) => {
+    new THREE.TextureLoader().load(`${import.meta.env.BASE_URL}textures/earth-diffuse.jpg`, (tex) => {
       tex.colorSpace = THREE.SRGBColorSpace
       if (matRef.current) {
         matRef.current.map = tex
@@ -490,6 +490,7 @@ function App() {
   const [selectedCity, setSelectedCity] = useState<City | null>(null)
   const [zoom, setZoom] = useState(0.45)
   const [progress, setProgress] = useState(0)
+  const [showUI, setShowUI] = useState(true)
 
   return (
     <div className="w-full h-full relative">
@@ -504,16 +505,24 @@ function App() {
         <OrbitControls zoomSpeed={0.3} maxDistance={6} />
       </Canvas>
       <div className="absolute top-4 left-4 flex flex-col gap-2">
-        <div className="bg-black/70 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
-          <div className="flex items-center gap-2">
-            <h1 className="text-sm font-bold text-white/90">NearFar Map</h1>
-            {progress > 0 && progress < 1 && <span className="text-xs text-white/40 font-mono">computing... {(progress * 100).toFixed(0)}%</span>}
-          </div>
-          <p className="text-xs text-white/40 mt-0.5">A 3D globe where elevation shows how connected or isolated each place is — by flight, road, shipping, and internet.</p>
+        <div className="bg-black/70 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10 flex items-center gap-2">
+          <h1 className="text-sm font-bold text-white/90">NearFar Map</h1>
+          {progress > 0 && progress < 1 && <span className="text-xs text-white/40 font-mono">computing... {(progress * 100).toFixed(0)}%</span>}
+          <button
+            onClick={() => setShowUI(v => !v)}
+            className="ml-auto text-white/50 hover:text-white/90 text-xs cursor-pointer"
+          >
+            {showUI ? '[ hide ]' : '[ show ]'}
+          </button>
         </div>
-        <WeightSliders />
+        {showUI && (
+          <>
+            <p className="text-xs text-white/40 bg-black/50 rounded-lg px-4 py-1 border border-white/10">A 3D globe where elevation shows how connected or isolated each place is — by flight, road, shipping, and internet.</p>
+            <WeightSliders />
+          </>
+        )}
       </div>
-      <Legend />
+      {showUI && <Legend />}
       {selectedCity && <CityTooltip city={selectedCity} />}
       <div className="absolute bottom-4 right-4 text-white/40 text-xs font-mono">
         zoom: {zoom.toFixed(2)}

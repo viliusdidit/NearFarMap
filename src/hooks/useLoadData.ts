@@ -10,7 +10,7 @@ export function useLoadData() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch('/data/cities.json')
+        const res = await fetch(`${import.meta.env.BASE_URL}data/cities.json`)
         if (!res.ok) throw new Error('Failed to load cities.json')
         const cities: City[] = await res.json()
         setCities(cities)
