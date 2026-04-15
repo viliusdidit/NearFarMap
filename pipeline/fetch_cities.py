@@ -30,10 +30,13 @@ def fetch_cities(min_population: int = 300_000, max_cities: int = 500) -> list[d
                 name = row[1]  # asciiname
                 lat = float(row[4])
                 lng = float(row[5])
+                feature_code = row[7]  # PPLC = capital
                 country = row[8]  # country code
                 pop = int(row[14])
 
-                if pop < min_population:
+                is_capital = feature_code == "PPLC"
+
+                if pop < min_population and not is_capital:
                     continue
 
                 city_id = f"{name.lower().replace(' ', '-')}-{country.lower()}"
@@ -44,6 +47,7 @@ def fetch_cities(min_population: int = 300_000, max_cities: int = 500) -> list[d
                     "lat": lat,
                     "lng": lng,
                     "population": pop,
+                    "capital": is_capital,
                     "scores": {},
                 })
 

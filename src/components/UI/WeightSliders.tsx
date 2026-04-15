@@ -5,9 +5,13 @@ export function WeightSliders() {
   const setMetricWeight = useGlobeStore((s) => s.setMetricWeight)
   const displacementScale = useGlobeStore((s) => s.displacementScale)
   const setDisplacementScale = useGlobeStore((s) => s.setDisplacementScale)
+  const globeOpacity = useGlobeStore((s) => s.globeOpacity)
+  const setGlobeOpacity = useGlobeStore((s) => s.setGlobeOpacity)
+  const invertDepth = useGlobeStore((s) => s.invertDepth)
+  const toggleInvertDepth = useGlobeStore((s) => s.toggleInvertDepth)
 
   return (
-    <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm rounded-lg p-4 w-64 border border-white/10">
+    <div className="bg-black/70 backdrop-blur-sm rounded-lg p-4 w-64 border border-white/10">
       <h3 className="text-sm font-bold mb-3 text-white/90">Distance Metrics</h3>
 
       {metrics.map((metric) => (
@@ -40,7 +44,7 @@ export function WeightSliders() {
         <input
           type="range"
           min="0.05"
-          max="1.0"
+          max="2.0"
           step="0.01"
           value={displacementScale}
           onChange={(e) => setDisplacementScale(parseFloat(e.target.value))}
@@ -50,6 +54,38 @@ export function WeightSliders() {
             background: `linear-gradient(to right, #888 ${(displacementScale / 1.0) * 100}%, #333 ${(displacementScale / 1.0) * 100}%)`,
           }}
         />
+      </div>
+
+      <div className="mt-3 pt-3 border-t border-white/10">
+        <div className="flex justify-between text-xs mb-1">
+          <span className="text-white/70">Globe Opacity</span>
+          <span className="text-white/50">{(globeOpacity * 100).toFixed(0)}%</span>
+        </div>
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.01"
+          value={globeOpacity}
+          onChange={(e) => setGlobeOpacity(parseFloat(e.target.value))}
+          className="w-full h-1 rounded-lg appearance-none cursor-pointer"
+          style={{
+            accentColor: '#888',
+            background: `linear-gradient(to right, #888 ${globeOpacity * 100}%, #333 ${globeOpacity * 100}%)`,
+          }}
+        />
+      </div>
+      <div className="mt-3 pt-3 border-t border-white/10">
+        <button
+          onClick={toggleInvertDepth}
+          className={`w-full text-xs py-1.5 px-3 rounded border cursor-pointer ${
+            invertDepth
+              ? 'bg-white/20 border-white/40 text-white'
+              : 'bg-transparent border-white/10 text-white/50'
+          }`}
+        >
+          {invertDepth ? 'Inverted: hubs are peaks' : 'Normal: isolated are peaks'}
+        </button>
       </div>
     </div>
   )

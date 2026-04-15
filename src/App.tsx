@@ -1,30 +1,18 @@
 import { useRef, useEffect, useState } from 'react'
 import { Canvas, useFrame, type ThreeEvent } from '@react-three/fiber'
-import { OrbitControls } from '@react-three/drei'
+import { OrbitControls, Text, Billboard } from '@react-three/drei'
 import * as THREE from 'three'
 import { useLoadData } from './hooks/useLoadData'
 import { useDataStore } from './stores/useDataStore'
 import { useGlobeStore } from './stores/useGlobeStore'
 import { WeightSliders } from './components/UI/WeightSliders'
 import { Legend } from './components/UI/Legend'
-import { scoreToColor } from './lib/colorRamp'
 import type { City } from './types/city'
+import DisplacementWorker from './workers/displacement.worker?worker'
 
 const DEG_TO_RAD = Math.PI / 180
-const K_NEAREST = 8
-const IDW_POWER = 2.0
-const POINT_SIZE = 0.015
-const BATCH_SIZE = 200
-
-function haversine(lat1: number, lng1: number, lat2: number, lng2: number) {
-  const dLat = (lat2 - lat1) * DEG_TO_RAD
-  const dLng = (lng2 - lng1) * DEG_TO_RAD
-  const a =
-    Math.sin(dLat / 2) ** 2 +
-    Math.cos(lat1 * DEG_TO_RAD) * Math.cos(lat2 * DEG_TO_RAD) *
-    Math.sin(dLng / 2) ** 2
-  return 6371 * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
-}
+const POINT_SIZE = 0.006
+const TOP_LABEL_COUNT = 100
 
 function latLngToXYZ(lat: number, lng: number, radius: number): [number, number, number] {
   const phi = (90 - lat) * DEG_TO_RAD
@@ -39,12 +27,67 @@ function latLngToXYZ(lat: number, lng: number, radius: number): [number, number,
 const dummy = new THREE.Object3D()
 const colorObj = new THREE.Color()
 
-// Per-metric IDW scores for each vertex
 interface VertexScores {
   [metricId: string]: Float32Array
 }
 
-function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
+function FlyControls({ onZoom }: { onZoom: (dist: number) => void }) {
+  const keys = useRef(new Set<string>())
+  const speed = 0.008
+
+  useEffect(() => {
+    const onDown = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement).tagName === 'INPUT') return
+      keys.current.add(e.code)
+    }
+    const onUp = (e: KeyboardEvent) => {
+      keys.current.delete(e.code)
+    }
+    window.addEventListener('keydown', onDown)
+    window.addEventListener('keyup', onUp)
+    return () => {
+      window.removeEventListener('keydown', onDown)
+      window.removeEventListener('keyup', onUp)
+    }
+  }, [])
+
+  useFrame(({ camera }) => {
+    onZoom(camera.position.length())
+
+    const k = keys.current
+    if (k.size === 0) return
+
+    const forward = new THREE.Vector3()
+    camera.getWorldDirection(forward)
+    const right = new THREE.Vector3().crossVectors(forward, camera.up).normalize()
+    const up = camera.up.clone()
+
+    const move = new THREE.Vector3()
+    if (k.has('KeyQ')) move.add(forward)
+    if (k.has('KeyE')) move.sub(forward)
+    if (k.has('Equal') || k.has('NumpadAdd')) {
+      const s = useGlobeStore.getState()
+      s.setDisplacementScale(Math.min(2.0, s.displacementScale + 0.005))
+    }
+    if (k.has('Minus') || k.has('NumpadSubtract')) {
+      const s = useGlobeStore.getState()
+      s.setDisplacementScale(Math.max(0.05, s.displacementScale - 0.005))
+    }
+    if (k.has('KeyD')) move.sub(right)
+    if (k.has('KeyA')) move.add(right)
+    if (k.has('KeyS')) move.add(up)
+    if (k.has('KeyW')) move.sub(up)
+
+    if (move.lengthSq() > 0) {
+      move.normalize().multiplyScalar(speed)
+      camera.position.add(move)
+    }
+  })
+
+  return null
+}
+
+function Scene({ onCityClick, onZoom, onProgress }: { onCityClick: (city: City | null) => void; onZoom: (dist: number) => void; onProgress: (p: number) => void }) {
   const meshRef = useRef<THREE.Mesh>(null)
   const matRef = useRef<THREE.MeshBasicMaterial>(null)
   const pointsRef = useRef<THREE.InstancedMesh>(null)
@@ -52,16 +95,18 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
   const metrics = useGlobeStore((s) => s.metrics)
   const displacementScale = useGlobeStore((s) => s.displacementScale)
   const selectedCity = useGlobeStore((s) => s.selectedCity)
-  const prevWeightsRef = useRef('')
-  const prevScaleRef = useRef<number | null>(null)
+  const labelOpacity = useGlobeStore((s) => s.labelOpacity)
+  const globeOpacity = useGlobeStore((s) => s.globeOpacity)
+  const invertDepth = useGlobeStore((s) => s.invertDepth)
+  const prevKeyRef = useRef('')
   const origRef = useRef<Float32Array | null>(null)
   const vertexScoresRef = useRef<VertexScores | null>(null)
-  const idwProgressRef = useRef(0)
-  const idwStartedRef = useRef(false)
-  const metricIdsRef = useRef<string[]>([])
+  const workerRef = useRef<Worker | null>(null)
+  const [labelData, setLabelData] = useState<{ name: string; pos: [number, number, number]; underground: boolean; rank: number }[]>([])
 
+  // Load texture
   useEffect(() => {
-    new THREE.TextureLoader().load('/textures/earth-1k.jpg', (tex) => {
+    new THREE.TextureLoader().load('/textures/earth-diffuse.jpg', (tex) => {
       tex.colorSpace = THREE.SRGBColorSpace
       if (matRef.current) {
         matRef.current.map = tex
@@ -71,124 +116,80 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     })
   }, [])
 
-  useFrame((_, delta) => {
-    if (pointsRef.current && meshRef.current) {
-      pointsRef.current.rotation.copy(meshRef.current.rotation)
-    }
-
+  // Launch worker when cities load
+  useEffect(() => {
     if (cities.length === 0 || !meshRef.current) return
 
     const geo = meshRef.current.geometry
     const positions = geo.attributes.position.array as Float32Array
-    const vertexCount = positions.length / 3
 
+    // Store originals
     if (!origRef.current) {
       origRef.current = new Float32Array(positions.length)
       origRef.current.set(positions)
-      // Pre-init vertex colors to white so vertexColors material works from start
+      const vertexCount = positions.length / 3
       const initColors = new Float32Array(vertexCount * 3).fill(1.0)
       geo.setAttribute('color', new THREE.BufferAttribute(initColors, 3))
     }
 
-    // Initialize IDW computation
-    if (!idwStartedRef.current) {
-      idwStartedRef.current = true
-      // Discover available metrics from city data
-      const metricIds = Object.keys(cities[0]?.scores || {})
-      metricIdsRef.current = metricIds
-      const scores: VertexScores = {}
-      for (const mid of metricIds) {
-        scores[mid] = new Float32Array(vertexCount)
+    // Kill previous worker
+    if (workerRef.current) workerRef.current.terminate()
+
+    const worker = new DisplacementWorker()
+    workerRef.current = worker
+    onProgress(0)
+
+    worker.onmessage = (e) => {
+      if (e.data.type === 'progress') {
+        onProgress(e.data.value)
+      } else if (e.data.type === 'done') {
+        const scores: VertexScores = {}
+        for (const [key, val] of Object.entries(e.data.scores)) {
+          scores[key] = new Float32Array(val as ArrayLike<number>)
+        }
+        vertexScoresRef.current = scores
+        onProgress(1)
+        prevKeyRef.current = '' // force displacement apply
+        worker.terminate()
+        workerRef.current = null
       }
-      vertexScoresRef.current = scores
     }
 
-    // Compute IDW in batches
-    if (idwProgressRef.current < vertexCount) {
-      const orig = origRef.current
-      const scores = vertexScoresRef.current!
-      const mids = metricIdsRef.current
-      const end = Math.min(idwProgressRef.current + BATCH_SIZE, vertexCount)
+    worker.postMessage({
+      positions: origRef.current,
+      cities: cities.map((c) => ({ lat: c.lat, lng: c.lng, scores: c.scores })),
+    })
 
-      for (let i = idwProgressRef.current; i < end; i++) {
-        const x = orig[i * 3], y = orig[i * 3 + 1], z = orig[i * 3 + 2]
-        const r = Math.sqrt(x * x + y * y + z * z)
-        const lat = 90 - Math.acos(y / r) / DEG_TO_RAD
-        let lng = Math.atan2(z, -x) / DEG_TO_RAD - 180
-        if (lng < -180) lng += 360
-
-        // Compute distances to all cities (once per vertex, shared across metrics)
-        const cityDists: { idx: number; dist: number }[] = []
-        for (let j = 0; j < cities.length; j++) {
-          cityDists.push({ idx: j, dist: haversine(lat, lng, cities[j].lat, cities[j].lng) })
-        }
-        cityDists.sort((a, b) => a.dist - b.dist)
-        const nearest = cityDists.slice(0, K_NEAREST)
-
-        // IDW weights (shared across metrics)
-        let wSum = 0
-        const weights: number[] = []
-        for (const n of nearest) {
-          const w = 1 / (n.dist + 0.1) ** IDW_POWER
-          weights.push(w)
-          wSum += w
-        }
-
-        // Interpolate each metric
-        for (const mid of mids) {
-          let vSum = 0
-          for (let k = 0; k < nearest.length; k++) {
-            vSum += (cities[nearest[k].idx].scores[mid] ?? 0) * weights[k]
-          }
-          scores[mid][i] = vSum / wSum
-        }
-      }
-
-      idwProgressRef.current = end
-
-      // Apply displacement for computed vertices so far
-      applyDisplacement(geo, positions, origRef.current, vertexScoresRef.current!, metrics, displacementScale, end)
-      geo.attributes.position.needsUpdate = true
-      if (end === vertexCount) {
-        geo.computeVertexNormals()
-        prevScaleRef.current = displacementScale
-        prevWeightsRef.current = metrics.map(m => m.weight).join(',')
-        placeCityPoints()
-      }
-      return
+    return () => {
+      worker.terminate()
+      workerRef.current = null
     }
+  }, [cities])
 
-    // After IDW done: handle weight/scale changes
-    const weightsKey = metrics.map(m => m.weight).join(',')
-    if (prevScaleRef.current !== displacementScale || prevWeightsRef.current !== weightsKey) {
-      prevScaleRef.current = displacementScale
-      prevWeightsRef.current = weightsKey
-      applyDisplacement(geo, positions, origRef.current!, vertexScoresRef.current!, metrics, displacementScale, vertexCount)
-      geo.attributes.position.needsUpdate = true
-      geo.computeVertexNormals()
-      placeCityPoints()
-    }
-  })
+  // Apply displacement + update points when scores/weights/scale change
+  useFrame(() => {
+    if (!meshRef.current || !vertexScoresRef.current || !origRef.current) return
+    if (pointsRef.current) pointsRef.current.rotation.copy(meshRef.current.rotation)
 
-  function applyDisplacement(
-    geo: THREE.BufferGeometry,
-    positions: Float32Array, orig: Float32Array,
-    scores: VertexScores, metrics: typeof useGlobeStore.getState extends () => infer S ? S['metrics'] : never,
-    scale: number, count: number
-  ) {
+    const key = metrics.map(m => m.weight).join(',') + '|' + displacementScale + '|' + invertDepth
+    if (prevKeyRef.current === key) return
+    prevKeyRef.current = key
+
+    const geo = meshRef.current.geometry
+    const positions = geo.attributes.position.array as Float32Array
+    const orig = origRef.current
+    const scores = vertexScoresRef.current
+    const vertexCount = positions.length / 3
+
     let totalWeight = 0
     for (const m of metrics) totalWeight += m.weight
     if (totalWeight === 0) totalWeight = 1
 
-    // Ensure color attribute exists
-    let colorAttr = geo.getAttribute('color') as THREE.BufferAttribute | null
-    if (!colorAttr || colorAttr.count !== count) {
-      colorAttr = new THREE.BufferAttribute(new Float32Array(count * 3), 3)
-      geo.setAttribute('color', colorAttr)
-    }
+    // Get/create color attribute
+    let colorAttr = geo.getAttribute('color') as THREE.BufferAttribute
     const colors = colorAttr.array as Float32Array
 
-    for (let i = 0; i < count; i++) {
+    for (let i = 0; i < vertexCount; i++) {
       const x = orig[i * 3], y = orig[i * 3 + 1], z = orig[i * 3 + 2]
       const r = Math.sqrt(x * x + y * y + z * z)
 
@@ -199,21 +200,30 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
         }
       }
       blended /= totalWeight
+      if (invertDepth) blended = 1.0 - blended
 
-      const s = 1.0 + blended * scale
+      // Map 0→-1, 0.5→0, 1→+1 then scale
+      // Valleys (low scores) sink below surface, peaks rise above
+      const centered = blended * 2.0 - 1.0 // -1 to +1
+      // Asymmetric: valleys go deeper than peaks go high
+      const shaped = centered >= 0
+        ? centered * centered          // peaks: gentle
+        : -(centered * centered)        // valleys: deep
+      const s = 1.0 + shaped * displacementScale
       positions[i * 3] = (x / r) * s
       positions[i * 3 + 1] = (y / r) * s
       positions[i * 3 + 2] = (z / r) * s
 
-      const [cr, cg, cb] = scoreToColor(blended)
-      const tint = blended * 0.7
-      colors[i * 3] = 1.0 - tint + cr * tint
-      colors[i * 3 + 1] = 1.0 - tint + cg * tint
-      colors[i * 3 + 2] = 1.0 - tint + cb * tint
+      colors[i * 3] = 2.5
+      colors[i * 3 + 1] = 2.5
+      colors[i * 3 + 2] = 3.0
     }
 
+    geo.attributes.position.needsUpdate = true
     colorAttr.needsUpdate = true
-  }
+    geo.computeVertexNormals()
+    placeCityPoints()
+  })
 
   function placeCityPoints() {
     if (!pointsRef.current) return
@@ -221,6 +231,7 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     const metrics_ = useGlobeStore.getState().metrics
     const scale = useGlobeStore.getState().displacementScale
     const selected = useGlobeStore.getState().selectedCity
+    const inv = useGlobeStore.getState().invertDepth
 
     let totalWeight = 0
     for (const m of metrics_) totalWeight += m.weight
@@ -233,32 +244,106 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
         if (m.weight > 0) blended += (city.scores[m.id] ?? 0) * m.weight
       }
       blended /= totalWeight
+      if (inv) blended = 1.0 - blended
 
-      const radius = 1.0 + blended * scale + 0.02
-      const [cx, cy, cz] = latLngToXYZ(city.lat, city.lng, radius)
+      const centered = blended * 2.0 - 1.0
+      const shaped = centered >= 0 ? centered * centered : -(centered * centered)
+      const beaconHeight = 0.02 + Math.abs(shaped) * scale * 0.3
+      const baseRadius = 1.0 + shaped * scale + 0.001
+      const midRadius = baseRadius + beaconHeight / 2
+      const [cx, cy, cz] = latLngToXYZ(city.lat, city.lng, midRadius)
+
       dummy.position.set(cx, cy, cz)
+      dummy.lookAt(0, 0, 0)
+      dummy.rotateX(Math.PI / 2)
+      dummy.scale.set(1, beaconHeight, 1)
       dummy.updateMatrix()
       pointsRef.current!.setMatrixAt(i, dummy.matrix)
 
-      colorObj.set(selected?.id === city.id ? '#ffd700' : '#ffffff')
+      if (selected?.id === city.id) {
+        colorObj.set('#ffd700')
+      } else {
+        // Cities with airports (flight score < 1.0) get cyan, others white
+        const hasAirport = (city.scores.flight ?? 1.0) < 0.95
+        colorObj.set(hasAirport ? '#00ccff' : '#ffffff')
+      }
       pointsRef.current!.setColorAt(i, colorObj)
     }
     pointsRef.current!.instanceMatrix.needsUpdate = true
     if (pointsRef.current!.instanceColor) pointsRef.current!.instanceColor.needsUpdate = true
+
+    // Labels: biggest cities by population, spaced apart
+    const scored = cities_.map(city => {
+      let b = 0
+      for (const m of metrics_) {
+        if (m.weight > 0) b += (city.scores[m.id] ?? 0) * m.weight
+      }
+      b /= totalWeight
+      if (inv) b = 1.0 - b
+      return { city, blended: b }
+    })
+
+    // Sort by population, pick biggest with spacing
+    const byPop = [...scored].sort((a, b) => b.city.population - a.city.population)
+    const MIN_ANGLE_DEG = 8
+    const minAngleRad = MIN_ANGLE_DEG * Math.PI / 180
+    const topCities: { city: City; blended: number }[] = []
+    const pickedCoords: { lat: number; lng: number }[] = []
+
+    for (const s of byPop) {
+      if (topCities.length >= TOP_LABEL_COUNT) break
+      const lat1 = s.city.lat * Math.PI / 180
+      const lng1 = s.city.lng * Math.PI / 180
+      let tooClose = false
+      for (const p of pickedCoords) {
+        const dlat = lat1 - p.lat
+        const dlng = lng1 - p.lng
+        const a = Math.sin(dlat / 2) ** 2 + Math.cos(lat1) * Math.cos(p.lat) * Math.sin(dlng / 2) ** 2
+        const angle = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+        if (angle < minAngleRad) { tooClose = true; break }
+      }
+      if (!tooClose) {
+        topCities.push(s)
+        pickedCoords.push({ lat: lat1, lng: lng1 })
+      }
+    }
+    const labels = topCities.map(({ city, blended }, idx) => {
+      const centered = blended * 2.0 - 1.0
+      const shaped = centered >= 0 ? centered * centered : -(centered * centered)
+      const beaconHeight = 0.02 + Math.abs(shaped) * scale * 0.3
+      const baseRadius = 1.0 + shaped * scale
+      const underground = baseRadius < 1.0
+      // Underground labels: at high displacement, put label at the deep end (near center)
+      // At low displacement, keep near surface
+      let labelRadius: number
+      if (underground) {
+        if (scale > 0.4) {
+          // Label at the deepest point — near beacon base (closest to center)
+          labelRadius = Math.max(0.02, baseRadius - 0.02)
+        } else {
+          labelRadius = Math.min(0.95, baseRadius + beaconHeight + 0.02)
+        }
+      } else {
+        labelRadius = baseRadius + beaconHeight + 0.02
+      }
+      const pos = latLngToXYZ(city.lat, city.lng, labelRadius)
+      return { name: city.name, pos, underground, rank: idx }
+    })
+    setLabelData(labels)
   }
 
   const handleGlobeClick = (e: ThreeEvent<MouseEvent>) => {
-    // Find nearest city to click point
     const point = e.point
     let nearest: City | null = null
     let nearestDist = Infinity
 
     for (const city of cities) {
       const score = blendCityScore(city)
-      const radius = 1.0 + score * useGlobeStore.getState().displacementScale + 0.02
+      const centered = score * 2.0 - 1.0
+      const shaped = centered >= 0 ? centered * centered : -(centered * centered)
+      const radius = 1.0 + shaped * useGlobeStore.getState().displacementScale + 0.02
       const [cx, cy, cz] = latLngToXYZ(city.lat, city.lng, radius)
 
-      // Account for globe rotation
       const rotY = meshRef.current?.rotation.y ?? 0
       const cosR = Math.cos(rotY), sinR = Math.sin(rotY)
       const rx = cx * cosR + cz * sinR
@@ -275,8 +360,7 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
       }
     }
 
-    // Only select if close enough (screen-space ~30px)
-    if (nearest && nearestDist < 0.01) {
+    if (nearest && nearestDist < 0.015) {
       const current = useGlobeStore.getState().selectedCity
       const next = current?.id === nearest.id ? null : nearest
       useGlobeStore.getState().setSelectedCity(next)
@@ -298,13 +382,20 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
         totalWeight += m.weight
       }
     }
-    return totalWeight > 0 ? blended / totalWeight : 0
+    let result = totalWeight > 0 ? blended / totalWeight : 0
+    if (useGlobeStore.getState().invertDepth) result = 1.0 - result
+    return result
   }
 
   function updatePointColors(selected: City | null) {
     if (!pointsRef.current) return
     for (let i = 0; i < cities.length; i++) {
-      colorObj.set(selected?.id === cities[i].id ? '#ffd700' : '#ffffff')
+      if (selected?.id === cities[i].id) {
+        colorObj.set('#ffd700')
+      } else {
+        const hasAirport = (cities[i].scores.flight ?? 1.0) < 0.95
+        colorObj.set(hasAirport ? '#00ccff' : '#ffffff')
+      }
       pointsRef.current.setColorAt(i, colorObj)
     }
     if (pointsRef.current.instanceColor) pointsRef.current.instanceColor.needsUpdate = true
@@ -314,16 +405,58 @@ function Scene({ onCityClick }: { onCityClick: (city: City | null) => void }) {
     <>
       <mesh ref={meshRef} onClick={handleGlobeClick}>
         <sphereGeometry args={[1, 128, 64]} />
-        <meshBasicMaterial ref={matRef} color="#2244aa" vertexColors />
+        <meshBasicMaterial ref={matRef} color="#2244aa" vertexColors side={THREE.DoubleSide} transparent opacity={globeOpacity} />
       </mesh>
       <instancedMesh
         ref={pointsRef}
-        args={[undefined, undefined, 500]}
+        args={[undefined, undefined, 3000]}
         raycast={() => {}}
       >
-        <sphereGeometry args={[POINT_SIZE, 4, 4]} />
-        <meshBasicMaterial />
+        <cylinderGeometry args={[0.001, 0.001, 1, 4]} />
+        <meshBasicMaterial transparent opacity={0.6} />
       </instancedMesh>
+      {labelData.map(({ name, pos, underground, rank }) => (
+        <group key={name}>
+          {rank < 10 && (
+            <mesh position={pos}>
+              <sphereGeometry args={[0.012 - rank * 0.001, 8, 8]} />
+              <meshBasicMaterial
+                color={underground ? '#00ffaa' : '#ffaa00'}
+                transparent
+                opacity={0.7}
+              />
+            </mesh>
+          )}
+          <Billboard position={pos}>
+            <Text
+              fontSize={rank < 10 ? 0.025 : underground ? 0.018 : 0.02}
+              color={underground ? '#00ffaa' : '#ffffff'}
+              anchorX="left"
+              anchorY="middle"
+              outlineWidth={0.002}
+              outlineColor={underground ? '#003322' : '#000000'}
+              fillOpacity={labelOpacity}
+              outlineOpacity={labelOpacity * 0.5}
+            >
+              {underground ? `▼ ${name}` : name}
+            </Text>
+          </Billboard>
+        </group>
+      ))}
+      <mesh>
+        <sphereGeometry args={[0.03, 16, 16]} />
+        <meshBasicMaterial color="#ff2200" />
+      </mesh>
+      <mesh>
+        <sphereGeometry args={[0.05, 16, 16]} />
+        <meshBasicMaterial color="#ff4400" transparent opacity={0.3} />
+      </mesh>
+      <mesh>
+        <sphereGeometry args={[0.08, 16, 16]} />
+        <meshBasicMaterial color="#ff6600" transparent opacity={0.1} />
+      </mesh>
+      <pointLight position={[0, 0, 0]} color="#ff4400" intensity={0.5} distance={2} />
+      <FlyControls onZoom={onZoom} />
     </>
   )
 }
@@ -355,22 +488,36 @@ function CityTooltip({ city }: { city: City }) {
 function App() {
   useLoadData()
   const [selectedCity, setSelectedCity] = useState<City | null>(null)
+  const [zoom, setZoom] = useState(0.45)
+  const [progress, setProgress] = useState(0)
 
   return (
     <div className="w-full h-full relative">
       <Canvas
-        camera={{ position: [0, 0, 3] }}
+        camera={{ position: [0, 0, 0.45] }}
         onPointerMissed={() => {
           useGlobeStore.getState().setSelectedCity(null)
           setSelectedCity(null)
         }}
       >
-        <Scene onCityClick={setSelectedCity} />
-        <OrbitControls />
+        <Scene onCityClick={setSelectedCity} onZoom={setZoom} onProgress={setProgress} />
+        <OrbitControls zoomSpeed={0.3} maxDistance={6} />
       </Canvas>
-      <WeightSliders />
+      <div className="absolute top-4 left-4 flex flex-col gap-2">
+        <div className="bg-black/70 backdrop-blur-sm rounded-lg px-4 py-2 border border-white/10">
+          <div className="flex items-center gap-2">
+            <h1 className="text-sm font-bold text-white/90">NearFar Map</h1>
+            {progress > 0 && progress < 1 && <span className="text-xs text-white/40 font-mono">computing... {(progress * 100).toFixed(0)}%</span>}
+          </div>
+          <p className="text-xs text-white/40 mt-0.5">A 3D globe where elevation shows how connected or isolated each place is — by flight, road, shipping, and internet.</p>
+        </div>
+        <WeightSliders />
+      </div>
       <Legend />
       {selectedCity && <CityTooltip city={selectedCity} />}
+      <div className="absolute bottom-4 right-4 text-white/40 text-xs font-mono">
+        zoom: {zoom.toFixed(2)}
+      </div>
     </div>
   )
 }

@@ -7,12 +7,8 @@ interface City {
 }
 
 interface WorkerInput {
-  positions: Float32Array // original vertex positions (x,y,z interleaved)
+  positions: Float32Array
   cities: City[]
-}
-
-interface WorkerOutput {
-  scores: Record<string, Float32Array>
 }
 
 const DEG_TO_RAD = Math.PI / 180
@@ -51,8 +47,6 @@ self.onmessage = (e: MessageEvent<WorkerInput>) => {
     scores[mid] = new Float32Array(vertexCount)
   }
 
-  const cityCoords = cities.map((c) => ({ lat: c.lat, lng: c.lng }))
-
   for (let i = 0; i < vertexCount; i++) {
     const { lat: vLat, lng: vLng } = vector3ToLatLng(
       positions[i * 3],
@@ -65,35 +59,41 @@ self.onmessage = (e: MessageEvent<WorkerInput>) => {
     for (let j = 0; j < cities.length; j++) {
       dists.push({
         idx: j,
-        dist: haversineDistance(vLat, vLng, cityCoords[j].lat, cityCoords[j].lng),
+        dist: haversineDistance(vLat, vLng, cities[j].lat, cities[j].lng),
       })
     }
 
     dists.sort((a, b) => a.dist - b.dist)
     const nearest = dists.slice(0, K_NEAREST)
 
-    const epsilon = 0.1
+    // IDW weights
     let weightSum = 0
-    const weighted: Record<string, number> = {}
-    for (const mid of metricIds) weighted[mid] = 0
-
+    const weights: number[] = []
     for (const n of nearest) {
-      const w = 1.0 / Math.pow(n.dist + epsilon, IDW_POWER)
+      const w = 1.0 / Math.pow(n.dist + 0.1, IDW_POWER)
+      weights.push(w)
       weightSum += w
-      for (const mid of metricIds) {
-        weighted[mid] += (cities[n.idx].scores[mid] ?? 0) * w
-      }
     }
 
+    // Distance-based isolation: far from any city → push toward 1.0
+    const nearestDist = nearest[0].dist
+    const isolation = Math.min(1.0, nearestDist / 2000)
+
+    // Interpolate each metric
     for (const mid of metricIds) {
-      scores[mid][i] = weighted[mid] / weightSum
+      let vSum = 0
+      for (let k = 0; k < nearest.length; k++) {
+        vSum += (cities[nearest[k].idx].scores[mid] ?? 0) * weights[k]
+      }
+      const idwScore = vSum / weightSum
+      scores[mid][i] = idwScore + (1.0 - idwScore) * isolation
     }
 
-    // Progress every 1000 vertices
-    if (i % 1000 === 0) {
+    // Progress every 500 vertices
+    if (i % 500 === 0) {
       self.postMessage({ type: 'progress', value: i / vertexCount })
     }
   }
 
-  self.postMessage({ type: 'done', scores } as { type: string } & WorkerOutput)
+  self.postMessage({ type: 'done', scores })
 }
